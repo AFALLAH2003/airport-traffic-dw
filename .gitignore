@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.idea/
+.ipynb_checkpoints/
+onda_raw/
+hcp_raw/
+onda_pdf/
+onda_excel/

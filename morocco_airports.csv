@@ -1,0 +1,46 @@
+﻿id,ident,type,name,municipality,iso_region,iata_code,gps_code,latitude_deg,longitude_deg
+3100,GMAA,small_airport,Inezgane Airport,Inezgane,MA-09,,GMAA,30.381399,-9.54631
+3101,GMAD,large_airport,Al Massira Airport,Agadir (Temsia),MA-09,AGA,GMAD,30.322478,-9.412003
+3102,GMAT,medium_airport,Tan Tan Airport,Tan Tan,MA-10,TTA,GMAT,28.447563,-11.161749
+429847,GMAZ,large_airport,Zagora Airport,Zagora,MA-08,OZG,GMAZ,30.265788,-5.860808
+30228,GMFA,small_airport,Ouezzane Airport,Beni Malek,MA-01,,GMFA,34.793361,-5.635986
+300605,GMFB,medium_airport,Bouarfa Airport,Bouarfa,MA-02,UAR,GMFB,32.514306,-1.983056
+3103,GMFF,large_airport,Fes Saïss International Airport,Saïss,MA-03,FEZ,GMFF,33.927299,-4.97796
+3104,GMFI,small_airport,Ifran Airport,Ifran,MA-03,,GMFI,33.505299,-5.1529
+3105,GMFK,medium_airport,Moulay Ali Cherif Airport,Errachidia,MA-08,ERH,GMFK,31.9475002289,-4.39833021164
+3106,GMFM,medium_airport,Bassatine Airport,Meknes,MA-03,MEK,GMFM,33.879101,-5.51512
+3107,GMFO,large_airport,Oujda Angads Airport,Ahl Angad,MA-02,OUD,GMFO,34.789558,-1.926041
+30474,GMFZ,small_airport,Taza Airport,Taza,MA-03,,GMFZ,34.231887,-3.94701
+31544,GMMB,small_airport,Ben Slimane Airport,Ben Slimane,MA-06,GMD,GMMB,33.655399,-7.22145
+29694,GMMD,large_airport,Beni Mellal Airport,Oulad Yaich,MA-05,BEM,GMMD,32.401895,-6.315905
+3109,GMME,large_airport,Rabat-Salé Airport,Rabat,MA-04,RBA,GMME,34.051498,-6.75152
+3111,GMMI,medium_airport,Essaouira-Mogador Airport,Essaouira,MA-07,ESU,GMMI,31.397499,-9.68167
+3113,GMMN,large_airport,Mohammed V International Airport,Casablanca,MA-06,CMN,GMMN,33.3675,-7.58997
+30472,GMMO,small_airport,Taroudant Airport,Taroudant,MA-09,,GMMO,30.503487,-8.821549
+29759,GMMT,small_airport,Casablanca Tit Mellil Airport,Casablanca,MA-06,,GMMT,33.5975,-7.465
+3114,GMMW,large_airport,Nador Al Aaroui International Airport,Al Aaroui,MA-02,NDR,GMMW,34.9888,-3.02821
+3115,GMMX,large_airport,Marrakesh Menara Airport,Marrakesh,MA-07,RAK,GMMX,31.604807,-8.035788
+3116,GMMY,medium_airport,Kenitra Air Base,Kenitra,MA-04,NNA,GMMP,34.298901,-6.59588
+3117,GMMZ,large_airport,Ouarzazate International Airport,Ouarzazate,MA-08,OZZ,GMMZ,30.9391,-6.90943
+3118,GMSL,small_airport,Sidi Slimane Airport,Sidi Slimane,MA-04,,GMSL,34.230598,-6.05014
+3119,GMTA,medium_airport,Cherif Al Idrissi Airport,Al Hoceima,MA-01,AHU,GMTA,35.177101,-3.83952
+3120,GMTN,large_airport,Sania Ramel Airport,Tétouan,MA-01,TTU,GMTN,35.594299,-5.32002
+3121,GMTT,large_airport,Tangier Ibn Battuta Airport,Tangier,MA-01,TNG,GMTT,35.731741,-5.921459
+353212,MA-0001,heliport,Cheikh Khalifa Bin Zayed Al Nahyan Hospital Heliport,Casablanca,MA-06,,,33.55178,-7.66799
+353213,MA-0002,small_airport,Lakhmiss N'Arazane Airport,Arazane,MA-09,,,30.49707,-8.63648
+356354,MA-0004,small_airport,Tata Airport,Tata,MA-09,,,29.557381,-8.007671
+429794,MA-0005,heliport,Beni Amir Heliport,Tlete Aoulad Azouz,MA-05,,,32.67406,-6.76116
+429795,MA-0006,small_airport,Khouribga Air Base,Khouribga,MA-05,,,32.85821,-6.9461
+429796,MA-0007,small_airport,Khouribga West Airport,N'Khila,MA-05,,,32.8767,-7.08445
+429797,MA-0008,small_airport,Ben Guerir Air Base,Ouled Ben Anou Grichate,MA-07,,GMMG,32.124889,-7.877885
+429798,MA-0009,small_airport,Sidi Zouine Airport,Sidi Zouine,MA-07,,,31.63833,-8.34768
+30573,MA-0011,closed,Former Zagora Airport,Zagora,MA-08,,,30.320299,-5.86667
+29758,MA-0012,closed,Anfa Airport,Casablanca,MA-06,,,33.5532989502,-7.66138982773
+29845,MA-0013,closed,El Jadida Airport,El Jadida,MA-06,,,33.233299,-8.51667
+29867,MA-0014,closed,Fes Sefrou Airport,Fes,MA-03,,,34.008099,-4.96556
+30369,MA-0015,closed,Safi Airport,Safi,MA-07,,,32.275414,-9.234266
+30412,MA-0016,closed,Sidi Ifni Airport,Sidi Ifni,MA-10,,,29.368889,-10.180278
+31541,MA-0017,closed,Taouima Nador Airport,Nador,MA-02,,,35.152986,-2.918673
+605853,MA-0019,small_airport,MERZOUGA Field,Merzouga,MA-08,,,31.12961,-4.03169
+605980,MA-0020,small_airport,FoumZguid Airfield,Foum Zguid,MA-09,,,30.06854,-6.86244
+31539,MA-GLN,small_airport,Guelmim Airport,Guelmim,MA-10,GLN,GMAG,29.026699,-10.0503

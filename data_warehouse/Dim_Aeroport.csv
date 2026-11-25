@@ -1,0 +1,23 @@
+﻿id_aeroport,code_iata,code_icao,nom_aeroport,nom_complet,ville,region,iso_region,type_aeroport,latitude_deg,longitude_deg
+1,CMN,GMMN,MOHAMMED V,Mohammed V International Airport,Casablanca,Casablanca-Settat,MA-06,large_airport,33.3675,-7.58997
+2,RAK,GMMX,MARRAKECH,Marrakesh Menara Airport,Marrakech,Marrakech-Safi,MA-07,large_airport,31.604807,-8.035788
+3,AGA,GMAD,AGADIR,Al Massira Airport,Agadir,Souss-Massa,MA-09,large_airport,30.322478,-9.412003
+4,TNG,GMTT,TANGER,Tangier Ibn Battuta Airport,Tanger,Tanger-Tétouan-Al Hoceïma,MA-01,large_airport,35.731741,-5.921459
+5,FEZ,GMFF,FES-SAISS,Fes Saïss International Airport,Fès,Fès-Meknès,MA-03,large_airport,33.927299,-4.97796
+6,RBA,GMME,RABAT-SALE,Rabat-Salé Airport,Rabat-Salé,Rabat-Salé-Kénitra,MA-04,large_airport,34.051498,-6.75152
+7,NDR,GMMW,NADOR,Nador Al Aaroui International Airport,Nador,Oriental,MA-02,large_airport,34.9888,-3.02821
+8,OUD,GMFO,OUJDA,Oujda Angads Airport,Oujda,Oriental,MA-02,large_airport,34.789558,-1.926041
+9,TTU,GMTN,TETOUAN,Sania Ramel Airport,Tétouan,Tanger-Tétouan-Al Hoceïma,MA-01,large_airport,35.594299,-5.32002
+10,EUN,GMML,LAAYOUNE,Hassan I Airport,Laâyoune,Laâyoune-Sakia El Hamra,MA-11,medium_airport,27.1517,-13.2192
+11,VIL,GMMH,DAKHLA,Dakhla Airport,Dakhla,Dakhla-Oued Ed-Dahab,MA-12,medium_airport,23.7183,-15.932
+12,ESU,GMMI,ESSAOUIRA,Essaouira-Mogador Airport,Essaouira,Marrakech-Safi,MA-07,medium_airport,31.397499,-9.68167
+13,OZZ,GMMZ,OUARZAZATE,Ouarzazate International Airport,Ouarzazate,Drâa-Tafilalet,MA-08,large_airport,30.9391,-6.90943
+14,AHU,GMTA,AL-HOCEIMA,Cherif Al Idrissi Airport,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,MA-01,medium_airport,35.177101,-3.83952
+15,ERH,GMFK,ERRACHIDIA,Moulay Ali Cherif Airport,Errachidia,Drâa-Tafilalet,MA-08,medium_airport,31.9475,-4.39833
+16,GLN,GMAG,GUELMIM,Guelmim Airport,Guelmim,Guelmim-Oued Noun,MA-10,small_airport,29.026699,-10.0503
+17,TTA,GMAT,TAN-TAN,Tan Tan Airport,Tan-Tan,Guelmim-Oued Noun,MA-10,medium_airport,28.447563,-11.161749
+18,OZG,GMAZ,ZAGORA,Zagora Airport,Zagora,Drâa-Tafilalet,MA-08,large_airport,30.265788,-5.860808
+19,GMD,GMMB,BENSLIMANE,Ben Slimane Airport,Benslimane,Casablanca-Settat,MA-06,small_airport,33.655399,-7.22145
+20,BEM,GMMD,BENI MELLAL,Beni Mellal Airport,Béni Mellal,Béni Mellal-Khénifra,MA-05,large_airport,32.401895,-6.315905
+21,UAR,GMFB,BOUARFA,Bouarfa Airport,Bouarfa,Oriental,MA-02,medium_airport,32.514306,-1.983056
+22,SMW,GMMA,ES-SMARA,Smara Airport,Es-Smara,Laâyoune-Sakia El Hamra,MA-11,small_airport,26.7318,-11.6847

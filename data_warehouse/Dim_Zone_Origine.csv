@@ -1,0 +1,8 @@
+﻿id_zone,code_zone,nom_zone,est_zone_detaillee
+1,EUR,Europe,1
+2,MEO,Moyen et Extrême-Orient,1
+3,AFR,Afrique,1
+4,NAM,Amérique du Nord,1
+5,MAG,Pays du Maghreb,1
+6,SAM,Amérique du Sud,1
+7,AUT,Autres,0
