@@ -1,0 +1,440 @@
+[CSV] morocco_airports.csv -> ['id', 'ident', 'type', 'name', 'municipality', 'iso_region', 'iata_code', 'gps_code', 'latitude_deg', 'longitude_deg']
+
+FILE: hcp_raw\Mouvements des avions_2026-11-24.xlsx
+  - Sheet [Données]: ['Périodes', '2021.0', '2020.0', '2019.0']
+
+FILE: hcp_raw\Nombre de voyageurs (Trafic commercial)_2026-11-24.xlsx
+  - Sheet [Données]: ['Mohammed V', 'Arrivées', '2002096.0', '1477277.0', '5135828.0']
+
+FILE: onda_excel\Copie+de+Dossier+communication+Mars+2024.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '705030', '736770.0', '-0.0430799299645751', '2255423', '2127386', '0.06018512860383588', '5883', '5859.0', '0.00409626216077829', '18249', '17504', '0.042561700182815354', '8304.881000000001', '6158.8279999999995', '0.3484515235690949', '22690.929999999997', '16894.045', '0.34313185504122895']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '656597', '80173', '736770', '631719', '73311', '705030', '-0.037889298915468696', '-0.08558991181569855', '1897800', '229586', '2127386', '2027151', '228272', '2255423', '0.06815839392981347', '-0.005723345500161159']
+  - Sheet [Ventilation par région]: ['EUROPE', '1779483', '1604028.0', '0.10938400077804128', '5219410', '4520299.0', '0.15466034437102502']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Aout+2024.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '1102082', '1033482.0', '0.06637754697227431', '6971329', '6545945', '0.06498435290855636', '8508', '7794.0', '0.09160892994611239', '55704', '52450', '0.062040038131553864', '6371.872999999996', '5764.432000000001', '0.10537742487030728', '57287.20699999995', '45359.060000000034', '0.2629716532926368']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '935474', '98008', '1033482', '997763', '104319', '1102082', '0.06658549569523044', '0.06439270263651947', '5852311', '693634', '6545945', '6245203', '726126', '6971329', '0.06713450464269585', '0.046843147827240306']
+  - Sheet [Ventilation par région]: ['EUROPE', '2398888', '2060529.0', '0.16420977331549325', '15939842', '13427147.0', '0.18713543539815272']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Août+2023.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '886732', '958708.0', '1172745.0', '0.7561166323454801', '5804399', '4661133', '6926761', '0.8379672692619249', '7763', '7545.0', '9482.0', '0.818709133094284', '52411', '42314', '61219', '0.8561230990378804', '5757.717000000001', '4723.837999999998', '5816.711000000001', '0.9898578423442388', '45352.345', '43060.92099999989', '58985.34699999996', '0.7688747681691189']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '1066092', '106653', '1172745', '811987', '74745', '886732', '0.7616481504410502', '0.7008241680965374', '6188615', '738146', '6926761', '5238685', '565714', '5804399', '0.8465036199537377', '0.766398517366483']
+  - Sheet [Ventilation par région]: ['EUROPE', '2006179', '1775595.0', '1.1298629473500432', '13148010', '11576796.0', '1.1357209715019596']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Août+2026.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['Août', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25', 'Août', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25', 'Août', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '1080960', '108217', '1189177', '1176139', '122576', '1298715', '0.08805043664890468', '0.13268710091760075', '6774491', '753296', '7527787', '7418059', '834351', '8252410', '0.09499872388936674', '0.10760046515579533']
+  - Sheet [Ventilation par région]: ['Passagers', 'Août', 'Var Août 26/25', 'Cumul à fin Août', 'Var Cumul 26/25']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Avril+2023.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '586567', '461800.0', '949209.0', '0.6179534749459813', '2597734', '1467062', '3178899', '0.8171804137218578', '5804', '4904.0', '7696.0', '0.7541580041580042', '23302', '15578', '28272', '0.8242076966610073', '5400.576000000002', '6506.932000000004', '8348.568', '0.6468865079616052', '22294.621000000017', '21800.584999999974', '29715.34600000002', '0.75027297343265']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '826578', '122631', '949209', '526051', '60516', '586567', '0.6364202773361981', '0.4934804413239719', '2806000', '372899', '3178899', '2330683', '267051', '2597734', '0.8306069137562366', '0.7161483404353458']
+  - Sheet [Ventilation par région]: ['EUROPE', '1478927', '1614076.0', '0.9162685028462104', '5957032', '5594697.0', '1.06476400777379']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Avril+2024.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '822898', '698385.0', '0.17828704797497083', '3080383', '2825771', '0.09010355050002282', '6469', '5825.0', '0.11055793991416309', '24740', '23331', '0.06039175346106039', '6561.560999999997', '5419.040000000001', '0.21083457586583526', '29294.04300000002', '22313.085000000014', '0.31286386440960545']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '614942', '83443', '698385', '730872', '92026', '822898', '0.18852184433653907', '0.10286063540380859', '2512742', '313029', '2825771', '2759998', '320385', '3080383', '0.09840087044352346', '0.02349942018151673']
+  - Sheet [Ventilation par région]: ['EUROPE', '1980720', '1525739.0', '0.29820369014621767', '7204656', '6046038.0', '0.19163260303689789']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Avril+2026.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['Avril', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25', 'Avril', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25', 'Avril', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25']
+  - Sheet [Ventilation nat-inter]: ['MARRAKECH', '891740', '45520', '937260', '961408', '54761', '1016169', '0.07812591114001839', '0.2030096660808436', '3310835', '121808', '3432643', '3644799', '158870', '3803669', '0.10087002221493974', '0.30426572967292786']
+  - Sheet [Ventilation par région]: ['Passagers', 'Avril', 'Var Avril 26/25', 'Cumul à fin Avril', 'Var Cumul 26/25']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Décembre+2023.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '816954', '792662.0', '855316.0', '0.9551487403485963', '9790914', '7639986', '10313365', '0.9493423339521098', '6750', '6752.0', '7999.0', '0.843855481935242', '79233', '67124', '91658', '0.8644417290361998', '7202.279000000001', '5220.100999999998', '8904.162000000004', '0.8088665727330655', '71853.78699999994', '63959.355999999985', '90081.361', '0.7976543227405272']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '764079', '91237', '855316', '733202', '83752', '816954', '0.9595892571317888', '0.9179609149796684', '9189861', '1123504', '10313365', '8743564', '1047350', '9790914', '0.9514359357557204', '0.9322174197866674']
+  - Sheet [Ventilation par région]: ['EUROPE', '1745670', '1406867.0', '1.2408209162628734', '20145630', '17477563.0', '1.1526566947577301']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Décembre+2025.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '1042404', '893685.0', '0.1664109837358801', '11456284', '10478331', '0.09333098944860589', '8268', '7208.0', '0.14705882352941177', '89028', '84052', '0.05920144672345691', '8914.174', '8495.866', '0.049236652272999705', '93889.06100000012', '88688.62399999987', '0.05863702429299456']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '803061', '90624', '893685', '941676', '100728', '1042404', '0.17260830746356753', '0.1114936440677966', '9368929', '1109402', '10478331', '10291057', '1165227', '11456284', '0.09842405679453863', '0.050319902073369255']
+  - Sheet [Ventilation par région]: ['EUROPE', '2083366', '2279914.0', '0.09434156072432787', '24370005', '26790058.0', '0.09930457544017735']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Février+2023.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '636989', '380877.0', '645416.0', '0.9869433047832715', '1362292', '437870', '1430576', '0.9522681772936216', '5410', '3835.0', '6168.0', '0.8771076523994812', '11610', '5321', '13493', '0.8604461572667309', '5322.682999999998', '4910.485000000001', '6825.160999999999', '0.7798618962981237', '10686.832999999995', '8986.469999999998', '13630.653', '0.7840294225082243']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '572998', '72418', '645416', '569557', '67432', '636989', '0.9939947434371499', '0.9311497141594631', '1276476', '154100', '1430576', '1218137', '144155', '1362292', '0.9542968297092934', '0.9354639844256976']
+  - Sheet [Ventilation par région]: ['EUROPE', '1424899', '1214457.0', '1.173280733694153', '2901038', '2514620.0', '1.153668546340998']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Février+2024.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '747985', '665313.0', '0.12426031056059328', '1548058', '1390616', '0.11321745183429502', '5801', '5445.0', '0.06538108356290175', '12343', '11645', '0.059939888364104764', '7440.3790000000035', '5371.066999999997', '0.385270189331097', '14376.785000000007', '10735.216999999997', '0.3392169902108184']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '592623', '72690', '665313', '671640', '76345', '747985', '0.1333343457813821', '0.05028201953501169', '1241203', '149413', '1390616', '1393314', '154744', '1548058', '0.12255126679519789', '0.035679626270806425']
+  - Sheet [Ventilation par région]: ['EUROPE', '1728541', '1439836.0', '0.2005124194699952', '3435106', '2916271.0', '0.17791042053361983']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Février+2026.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['Février', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25', 'Février', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25', 'Février', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '724735', '83624', '808359', '737162', '83254', '820416', '0.017146957163652922', '-0.004424567109920597', '1520096', '167165', '1687261', '1705603', '177838', '1883441', '0.1220363713870703', '0.06384709717943349']
+  - Sheet [Ventilation par région]: ['Passagers', 'Février', 'Var Février 26/25', 'Cumul à fin Février', 'Var Cumul 26/25']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Janvier+2023.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '722402', '56993.0', '785160.0', '0.9200697946915278', '6173', '1486.0', '7325.0', '0.8427303754266212', '5346.764999999999', '4075.9850000000006', '6805.492', '0.7856544390912514']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '703478', '81682', '785160', '645935', '76467', '722402', '0.918202132831446', '0.9361548443965623']
+  - Sheet [Ventilation par région]: ['EUROPE', '1471021', '1300163.0', '1.13141275363166']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Janvier+2024.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '797561', '725303.0', '785160.0', '1.0157942330225687', '6515', '6200.0', '7325.0', '0.889419795221843', '6894.837999999997', '5364.149999999997', '6805.492000000003', '1.013128514440983']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '703478', '81682', '785160', '648580', '76723', '725303', '719317', '78244', '797561', '1.022515274109496', '0.957909943439191', '1.109064417650868', '1.0198245636901582']
+  - Sheet [Ventilation par région]: ['EUROPE', '1701127', '1300163.0', '1.3083951781430483', 'EUROPE', '1701127', '1476435.0', '1.152185500885579']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Janvier+2026.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '1062683', '878902.0', '0.20910294890670406', '8253', '7058.0', '0.16931141966562765', '8699.257', '8332.01', '0.04407663937033193']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '795361', '83541', '878902', '968099', '94584', '1062683', '0.2171818834466362', '0.13218659101519015']
+  - Sheet [Ventilation par région]: ['EUROPE', '2000395', '2263549.0', '0.13155101867381203']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Juillet+2023.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '861583', '941539.0', '1082950.0', '0.7955889006879358', '4915632', '3702425', '5754016', '0.8542958518015938', '7801', '7477.0', '9171.0', '0.8506160724021372', '44624', '34769', '51737', '0.8625161876413399', '5499.942000000001', '4691.415000000001', '7266.388999999998', '0.7569016742703979', '39588.532000000036', '38337.08300000006', '53168.63599999986', '0.7445843071844112']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '983765', '99185', '1082950', '782196', '79387', '861583', '0.7951045219132618', '0.8003932046176337', '5122523', '631493', '5754016', '4424827', '490805', '4915632', '0.8637983665471097', '0.7772136824952929']
+  - Sheet [Ventilation par région]: ['EUROPE', '1873871', '1616363.0', '1.1593132235766348', '11131269', '9801201.0', '1.1357045937533574']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Juillet+2024.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '1025766', '1005630.0', '0.020023268995555024', '5866203', '5512463', '0.06417095225854577', '8221', '7823.0', '0.050875623162469644', '47175', '44656', '0.05640899319240416', '7040.079999999997', '5506.038000000001', '0.27861086320145184', '50900.74599999998', '39594.62800000009', '0.2855467665967176']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '911086', '94544', '1005630', '925794', '99972', '1025766', '0.01614337175634353', '0.05741242172956507', '4916837', '595626', '5512463', '5244683', '621520', '5866203', '0.06667823236767866', '0.04347358913143483']
+  - Sheet [Ventilation par région]: ['EUROPE', '2198823', '1941925.0', '0.13229038196634782', '13531162', '11366618.0', '0.19042990623948125']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Juillet+2026.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['Juillet', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25', 'Juillet', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25', 'Juillet', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '1009313', '102553', '1111866', '1084506', '112646', '1197152', '0.07449918905235542', '0.09841740368394879', '5693531', '645079', '6338610', '6241920', '711775', '6953695', '0.09631790886885484', '0.1033919876480245']
+  - Sheet [Ventilation par région]: ['Passagers', 'Juillet', 'Var Juillet 26/25', 'Cumul à fin Juillet', 'Var Cumul 26/25']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Juin+2023.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '725158', '682661.0', '882074.0', '0.8221056283259681', '4052030', '2760886', '4671066', '0.8674743623832333', '6888', '6058.0', '7950.0', '0.8664150943396226', '36798', '27292', '42566', '0.8644927876709111', '5635.027000000005', '5683.304999999999', '7072.488000000001', '0.7967531369441706', '34087.11900000001', '33645.667999999976', '45902.246999999865', '0.7426024046273838']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '790907', '91167', '882074', '655635', '69523', '725158', '0.828965984622718', '0.762589533493479', '4138758', '532308', '4671066', '3640809', '411221', '4052030', '0.8796863696790197', '0.7725245534540154']
+  - Sheet [Ventilation par région]: ['EUROPE', '1569135', '1433085.0', '1.0949350527009911', '9246949', '8184838.0', '1.1297656715991202']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Juin+2024.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '881194', '844589.0', '0.043340607088181354', '4836649', '4506833', '0.07318132267159666', '7332', '6916.0', '0.06015037593984962', '38927', '36833', '0.056851193223468086', '6058.856', '5636.497999999999', '0.07493269757214518', '43802.02400000001', '34088.59000000003', '0.2849467813130426']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '755874', '88715', '844589', '786042', '95152', '881194', '0.03991141380706308', '0.07255819196302768', '4005751', '501082', '4506833', '4315284', '521365', '4836649', '0.07727215196351446', '0.040478404732159606']
+  - Sheet [Ventilation par région]: ['EUROPE', '1997082', '1625236.0', '0.22879507960690015', '11325746', '9424693.0', '0.2017098063565572']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Juin+2026.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['Juin', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25', 'Juin', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25', 'Juin', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '836932', '95360', '932292', '873321', '100864', '974185', '0.043479040113175264', '0.05771812080536913', '4684218', '542526', '5226744', '5157259', '599129', '5756388', '0.10098611977495496', '0.10433232692995359']
+  - Sheet [Ventilation par région]: ['Passagers', 'Juin', 'Var Juin 26/25', 'Cumul à fin Juin', 'Var Cumul 26/25']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Mai+2023.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '725738', '611163.0', '610093.0', '1.189553068138792', '3325362', '2078225', '3788992', '0.8776376408290121', '6565', '5656.0', '6344.0', '1.0348360655737705', '29885', '21234', '34616', '0.86332909637162', '6131.1630000000005', '6161.778', '9114.413', '0.6726887403500368', '28444.248000000014', '27962.363000000012', '38829.75899999996', '0.7325373304531724']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '541851', '68242', '610093', '651728', '74010', '725738', '1.2027808382747287', '1.084522727938806', '3347851', '441141', '3788992', '2984026', '341336', '3325362', '0.8913258087053456', '0.7737571434076633']
+  - Sheet [Ventilation par région]: ['EUROPE', '1708768', '1157056.0', '1.476823939377178', '7670392', '6751753.0', '1.1360593315543386']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Mai+2024.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '869278', '836473.0', '0.03921824135387514', '3952585', '3662244', '0.07927953462412662', '6808', '6586.0', '0.033707865168539325', '31569', '29917', '0.05521944045191697', '8411.836000000001', '6139.007000000005', '0.3702274651258736', '37726.01800000002', '28452.092000000015', '0.32594882653971446']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '737135', '99338', '836473', '763766', '105512', '869278', '0.036127710663582654', '0.06215144254967887', '3249877', '412367', '3662244', '3526615', '425970', '3952585', '0.08515337657394419', '0.03298760570074715']
+  - Sheet [Ventilation par région]: ['EUROPE', '2113975', '1753419.0', '0.20563025722887684', '9324006', '7799457.0', '0.19546860762229987']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Mai+2026.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['Mai', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25', 'Mai', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25', 'Mai', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25']
+  - Sheet [Ventilation nat-inter]: ['MARRAKECH', '846545', '40689', '887234', '940191', '48233', '988424', '0.11062140819448474', '0.1854063751873971', '4157380', '162497', '4319877', '4584990', '207103', '4792093', '0.10285564466081998', '0.2745035292959255']
+  - Sheet [Ventilation par région]: ['Passagers', 'Mai', 'Var Mai 26/25', 'Cumul à fin Mai', 'Var Cumul 26/25']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Mars+2023.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '643184', '567392.0', '799114.0', '0.80487139507004', '2009920', '1005262', '2229690', '0.901434728594558', '5836', '5353.0', '7083.0', '0.8239446562191162', '17480', '10674', '20576', '0.8495334370139969', '6158.002000000001', '6307.182999999995', '7736.125000000001', '0.7960060107612016', '16893.21900000001', '15293.653000000011', '21366.778000000002', '0.7906301549068374']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '702946', '96168', '799114', '581712', '61472', '643184', '0.8275344052032446', '0.6392147075950421', '1979422', '250268', '2229690', '1803925', '205995', '2009920', '0.9113392697464209', '0.8230976393306375']
+  - Sheet [Ventilation par région]: ['EUROPE', '1567897', '1466001.0', '1.0695060917420929', '4474541', '3980621.0', '1.1240811421132533']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Mars+2026.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['Mars', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25', 'Mars', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25', 'Mars', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25']
+  - Sheet [Ventilation nat-inter]: ['MARRAKECH', '869547', '22643', '892190', '979603', '34856', '1014459', '0.12656705157973058', '0.5393719913439032', '2419095', '76288', '2495383', '2682672', '104109', '2786781', '0.10895686196697525', '0.3646838296979866']
+  - Sheet [Ventilation par région]: ['Passagers', 'Mars', 'Var Mars 26/25', 'Cumul à fin Mars', 'Var Cumul 26/25']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Novembre+2023.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '711241', '667148.0', '772300.0', '0.9209387543700635', '8970014', '6847324', '9458049', '0.9484000347217486', '6024', '5626.0', '6958.0', '0.8657660247197471', '72441', '60372', '83659', '0.865908031413237', '6173.011999999996', '5426.626000000001', '7849.413', '0.78642976232745', '64613.62', '58739.255', '81177.19900000014', '0.7959577417791897']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '676891', '95409', '772300', '630542', '80699', '711241', '0.9315266416601786', '0.8458216730077875', '8425782', '1032267', '9458049', '8006883', '963131', '8970014', '0.9502836650651536', '0.9330250797516534']
+  - Sheet [Ventilation par région]: ['EUROPE', '1588389', '1412699.0', '1.1243647797584624', '18390599', '16070696.0', '1.1443561000718325']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Novembre+2025.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '891966', '787710.0', '0.1323532772213124', '10410974', '9584646', '0.08621372140400387', '7028', '6506.0', '0.08023363049492777', '80735', '76844', '0.050635052834313674', '8617.566000000004', '7885.576000000001', '0.09282644666667385', '84967.67899999971', '80192.75800000007', '0.05954304502159202']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '697257', '90453', '787710', '790393', '101573', '891966', '0.1335748511667864', '0.12293677379412513', '8565868', '1018778', '9584646', '9346604', '1064370', '10410974', '0.09114499546339028', '0.04475165345148796']
+  - Sheet [Ventilation par région]: ['EUROPE', '1994589', '2203615.0', '0.1047965270038087', '22285766', '24505506.0', '0.09960348681754971']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Octobre+2023.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '722358', '762610.0', '848400.0', '0.8514356435643564', '7275356', '6180176', '8685749', '0.8376198759600352', '6842', '6112.0', '7588.0', '0.9016868740115973', '66391', '54746', '76701', '0.8655819350464792', '7013.340999999995', '5190.589999999999', '7893.203999999999', '0.8885290434657455', '58419.17800000003', '53312.629000000066', '73327.78600000014', '0.7966854201761924']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '742456', '105944', '848400', '646883', '75475', '722358', '0.8712745267059597', '0.7124046666163256', '7748891', '936858', '8685749', '6566407', '708949', '7275356', '0.8473995827273864', '0.7567304756964236']
+  - Sheet [Ventilation par région]: ['EUROPE', '1698794', '1553625.0', '1.0934388929117387', '16453606', '14657997.0', '1.1225002979602192']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Octobre+2026.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['Octobre', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25', 'Octobre', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25', 'Octobre', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25']
+  - Sheet [Ventilation nat-inter]: ['MED V', '880727', '110195', '990922', '993262', '127068', '1120330', '0.12777512214341108', '0.15311947003040066', '8556211', '962797', '9519008', '9405686', '1070034', '10475720', '0.09928167970612226', '0.11138069603457426']
+  - Sheet [Ventilation par région]: ['Passagers', 'Octobre', 'Var Octobre 26/25', 'Cumul à fin Octobre', 'Var Cumul 26/25']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Septembre+2023.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '745052', '756433.0', '910588.0', '0.8182097721472279', '6551010', '5417566', '7837349', '0.8358706496291028', '7081', '6320.0', '7894.0', '0.8970103876361794', '59520', '48634', '69113', '0.8611983273769045', '6004.396000000001', '5061.118000000001', '6449.235000000001', '0.9310245323670172', '51363.37100000004', '48122.039000000026', '65434.582', '0.7849575779363891']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '817820', '92768', '910588', '677528', '67524', '745052', '0.828456139492798', '0.7278803035529493', '7006435', '830914', '7837349', '5917586', '633424', '6551010', '0.8445930062863639', '0.7623219731524562']
+  - Sheet [Ventilation par région]: ['EUROPE', '1593418', '1527576.0', '1.0431022744531204', '14749951', '13104372.0', '1.1255748081632604']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Septembre+2024.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '932983', '867054.0', '0.07603793996683021', '7906684', '7412999', '0.06659720310228019', '7505', '7113.0', '0.05511036131027696', '63232', '59563', '0.06159864345315044', '6911.915999999998', '6046.8619999999955', '0.14305833339672766', '64219.13100000002', '51405.92200000004', '0.2492555040642977']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '778213', '88841', '867054', '836691', '96292', '932983', '0.07514395159165935', '0.08386893438840175', '6630524', '782475', '7412999', '7084070', '822614', '7906684', '0.06840273860708444', '0.051297485542669094']
+  - Sheet [Ventilation par région]: ['EUROPE', '2104870', '1632076.0', '0.28968871547648517', '18050063', '15059223.0', '0.1986052002815816']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier+communication+Septembre+2026.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['Septembre', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25', 'Septembre', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25', 'Septembre', 'Var 26-25', 'CUMUL', 'Var Cumul 26-25']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '900993', '99306', '1000299', '993582', '108615', '1102197', '0.1027632845094246', '0.09374055948281071', '7675484', '852602', '8528086', '8412155', '942966', '9355121', '0.09597713968265714', '0.1059861459391369']
+  - Sheet [Ventilation par région]: ['Passagers', 'Septembre', 'Var Septembre 26/25', 'Cumul à fin Septembre', 'Var Cumul 26/25']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Les+statistiques+du+trafic+aérien+du+mois+de+décembre+2022.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '790319', '89044.0', '855316.0', '0.924008202816269', '7637643', '4152736', '10313365', '0.7405578101812551', '6725', '1717.0', '7999.0', '0.8407300912614076', '67094', '45157', '91658', '0.7320037530821096', '5218.5289999999995', '4345.666000000001', '8904.162', '0.5860774994884415', '63957.78399999997', '64407.68799999986', '90081.36100000027', '0.7100001963780253']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '764079', '91237', '855316', '712794', '77525', '790319', '0.9328799770704338', '0.8497100956848647', '9189861', '1123504', '10313365', '6806091', '831552', '7637643', '0.7406086990869611', '0.7401415571284126']
+  - Sheet [Ventilation par région]: ['EUROPE', '1548500', '1406867.0', '1.1006726293245914', '15273827', '17477563.0', '0.873910567508754']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\STATISTIQUES DU TRAFIC COMMERCIAL PAR AEROPORT Septembre 2022.xlsx
+  - Sheet [Feuil1]: ['MOHAMMED V', '6305', '5634.0', '7894.0', '0.7987078794020775', '48614', '33943', '69113', '0.7033987817053232', '755119', '532519.0', '910588.0', '0.829265265960017', '5416198', '3170644', '7837349', '0.6910752602697673', '5060.5030000000015', '5495.031000000002', '6449.235000000001', '0.784667173703548', '48121.4239999999', '47642.440999999984', '65434.582', '0.7354127210593306']
+
+FILE: onda_excel\Stat+site+web+nov+2022.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '664351', '445032.0', '772300.0', '0.8602240062152013', '6844387', '4063692', '9458049', '0.7236573843083283', '5602', '4675.0', '6958.0', '0.805116412762288', '60344', '43440', '83659', '0.7213091239436283']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '676891', '95409', '772300', '587696', '76655', '664351', '0.8682284149146613', '0.8034357345743064', '8425782', '1032267', '9458049', '6090736', '753651', '6844387', '0.7228689277743003', '0.730093086381721']
+  - Sheet [Ventilation par région]: ['EUROPE', '1426817', '1412699.0', '1.0099936362947803', '13720904', '16070696.0', '0.8537840551523095']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Statistiques+du+trafic+aérien+du+mois+d'août.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '1186366', '1104285.0', '0.07432954355080437', '7524975', '6973701', '0.07905042100313736', '8643', '8529.0', '0.013366162504396765', '58412', '55727', '0.04818131246971845', '5872.508', '6391.881000000005', '-0.08125511097594036', '61285.46599999997', '57307.214999999946', '0.06941972315353362']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '999770', '104515', '1104285', '1078340', '108026', '1186366', '0.07858807525730918', '0.03359326412476678', '6247379', '726322', '6973701', '6771871', '753104', '7524975', '0.08395392691879267', '0.03687345282120051']
+  - Sheet [Ventilation par région]: ['EUROPE', '2501598', '2403380.0', '0.04086661285356456', '17631777', '15946126.0', '0.10570912333189893']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Statistiques+du+trafic+aérien+du+mois+d'octobre.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '987925', '887623.0', '0.11300067708925975', '9515960', '8796936', '0.08173573162291961', '7551', '7078.0', '0.06682678722803052', '73680', '70338', '0.047513435127527086', '7869.139', '8072.839999999998', '-0.02523287963095989', '76338.92800000012', '72307.1819999999', '0.05575858287493797']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '782387', '105236', '887623', '877993', '109932', '987925', '0.12219783815426381', '0.04462351286631951', '7868611', '928325', '8796936', '8553427', '962533', '9515960', '0.08703137059386974', '0.03684916381655132']
+  - Sheet [Ventilation par région]: ['EUROPE', '2429660', '2233419.0', '0.08786573410542312', '22295922', '20291057.0', '0.09880535055418749']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Statistiques+du+trafic+aérien+du+mois+de+séptembre.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '996525', '935281.0', '0.06548192468359776', '8524311', '7909313', '0.07775618438668441', '7656', '7531.0', '0.016598061346434736', '66094', '63260', '0.04479924122668353', '7090.904000000001', '6927.105', '0.023646097467845774', '68416.05999999997', '64234.34200000007', '0.06510097044350348']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '838682', '96599', '935281', '897503', '99022', '996525', '0.07013504522572322', '0.02508307539415522', '7086224', '823089', '7909313', '7671994', '852317', '8524311', '0.08266320680802638', '0.03551013316907406']
+  - Sheet [Ventilation par région]: ['EUROPE', '2220786', '2110390.0', '0.05231071034263809', '19857228', '18057638.0', '0.09965810589402667']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Top 5 des Routes aériennes internationales Septembre 2022-2019.xlsx
+  - Sheet [Feuil1]: ['ROUTES AERIENNES', 'Passagers', 'Part %', 'ROUTES AERIENNES', 'Passagers', 'Part %']
+  - Sheet [Feuil2]: ['ROUTES AERIENNES', 'Passagers', 'Part %', 'ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Trafic aérien global (passagers) au titre du mois de juin 2022.xls
+  - Sheet [Feuil3]: ['Mois Juin 2019', 'Total Mois Juin 2019', 'Mois Juin 2022', 'Total Mois Juin 2022']
+
+FILE: onda_excel\Trafic aérien international des passagers par secteur géographique et par aéroport Février 19 22.xlsx
+  - Sheet [Feuil4]: ['AEROPORT/SECTEUR', '07 au 28 Fev 2019', '07 au 28 Fev 2022']
+
+FILE: onda_excel\Trafic aérien passagers par secteur géographique et par aéroport juin 2019 2022.xls
+  - Sheet [Feuil4]: ['AEROPORT/SECTEUR', 'Juin 2019', 'juin 2022']
+
+FILE: onda_excel\Trafic+aérien+international+des+passagers+par+secteur+géographique+et+par+aéroport+Avril+19+22.xlsx
+  - Sheet [Feuil4]: ['AEROPORT/SECTEUR', 'Avril 2019', 'Avril 2022']
+
+FILE: onda_excel\Trafic+aérien+international+des+passagers+par+secteur+géographique+et+par+aéroport+Mai+19+22.xlsx
+  - Sheet [Feuil4]: ['AEROPORT/SECTEUR', 'Mai 2019', 'Mai 2022']
+
+FILE: onda_excel\Trafic+aérien+international+des+passagers+par+secteur+géographique+et+par+aéroport+Mars+19+22.xlsx
+  - Sheet [Feuil4]: ['AEROPORT/SECTEUR', 'Mars 2019', 'Mars 2022']
+
+FILE: onda_excel\Trafic+aérien+international+des+passagers+par+secteur+géographique+et+par+aéroport+vf.xlsx
+  - Sheet [Feuil2]: ['AEROPORT/SECTEUR', '7 fev au 30 avril 2022', '7 Fev au 30 Avril 2019', 'Taux de Récupération']
+
+FILE: onda_excel\Ventilation du trafic aérien commercial des passagers au titre des mois de Février 19 22.xlsx
+  - Sheet [Feuil3]: ['MOHAMMED V', '455696', '58718', '514414', '328981', '43353', '372334']
+
+FILE: onda_excel\Ventilation+du+trafic+aérien+commercial+des+passagers+en+national++international+et+par+aéroport.xlsx
+  - Sheet [Feuil1]: ['MOHAMMED V', '1235764', '161820', '1397584', '1985078', '277517', '2262595', '0.6176907488967314']
+
+FILE: onda_excel\Ventilation+du+trafic+aérien+commercial+des+passagers+en+national+international+et+par+aéroport.xlsx
+  - Sheet [Feuil3]: ['MOHAMMED V', '702804', '96168', '798972', '499030', '66454', '565484']
+
+FILE: onda_excel\Ventilation+du+trafic+aérien+commercial+des+passagers+en+national,+international+et+par+aéroport+au+titre+du+mois+de+Mai+19+22.xlsx
+  - Sheet [Feuil3]: ['MOHAMMED V', '536471', '71456', '607927', '541851', '68242', '610093']
+
+FILE: onda_excel\Ventilation+du+trafic+aérien+commercial+des+passagers+en+national,+international+et+par+aéroport.xlsx
+  - Sheet [Feuil3]: ['INTERNATIONAL', 'NATIONAL', 'TOTAL', 'INTERNATIONAL', 'NATIONAL', 'TOTAL']
+
+FILE: onda_excel\stat+Octobre+2022.xlsx
+  - Sheet [Trafic aérien par aéroport]: ['MOHAMMED V', '759360', '447925.0', '848400.0', '0.8950495049504951', '6176926', '3618569', '8685749', '0.7111564011347784', '6084', '4821.0', '7588.0', '0.8017923036373221', '54714', '38764', '76701', '0.7133414166699261']
+  - Sheet [Ventilation nat-inter]: ['MOHAMMED V', '742456', '105944', '848400', '672159', '87201', '759360', '0.9053182949561994', '0.8230857811674092', '7748891', '936858', '8685749', '5500178', '676748', '6176926', '0.709801957467204', '0.7223592049168605']
+  - Sheet [Ventilation par région]: ['EUROPE', '1658704', '1553625.0', '1.0676347252393596', '12289367', '14657997.0', '0.8384069801624329']
+  - Sheet [Top 5 des routes]: ['ROUTES AERIENNES', 'Passagers', 'Part %']
+
+FILE: onda_excel\Dossier communication Août 2022\Fret Août 2022-2019.xlsx
+  - Sheet [Feuil1]: ['AEROPORT', 'Août', 'Août', 'Var']
+
+FILE: onda_excel\Dossier communication Août 2022\Top 5 des Routes aériennes internationales Août 2022-2019.xlsx
+  - Sheet [Feuil1]: ['ROUTES AERIENNES', 'Passagers', 'Part (%)', 'ROUTES AERIENNES', 'Passagers', 'Part (%)']
+
+FILE: onda_excel\Dossier communication Août 2022\Trafic aérien Mouvements du 07 Fev au 31 Août 2022-2019.xlsx
+  - Sheet [Feuil1]: ['MOHAMMED V', '3622', '4845.0', '0.7475748194014448', '5330', '7081.0', '0.7527185425787318', '4882', '7696.0', '0.6343555093555093', '5624', '6344.0', '0.8865069356872636', '6028', '7950.0', '0.7582389937106918', '7455', '9171.0', '0.8128884527314361', '7522', '9482.0', '0.793292554313436', '40463', '52569.0', '0.7697121877912838']
+
+FILE: onda_excel\Dossier communication Août 2022\01 au 30 avril 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Avril 19 22.xlsx
+  - Sheet [Feuil4]: ['AEROPORT/SECTEUR', 'Avril 2019', 'Avril 2022']
+
+FILE: onda_excel\Dossier communication Août 2022\01 au 30 avril 2022\Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre des mois d Avril 19 22.xlsx
+  - Sheet [Feuil3]: ['MOHAMMED V', '826578', '122631', '949209', '407753', '52013', '459766']
+
+FILE: onda_excel\Dossier communication Août 2022\01 au 30 juin 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Juin 19 22.xlsx
+  - Sheet [Feuil1]: ['AEROPORT/SECTEUR', 'Juin 2019', 'Juin 2022']
+
+FILE: onda_excel\Dossier communication Août 2022\01 au 30 juin 2022\Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois de Juin 19 22.xlsx
+  - Sheet [Feuil1]: ['MOHAMMED V', '790907', '91167', '882074', '606640', '71820', '678460']
+
+FILE: onda_excel\Dossier communication Août 2022\01 au 31 juillet 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Juillet 19 22.xlsx
+  - Sheet [Feuil1]: ['AEROPORT/SECTEUR', 'Juillet 2019', 'Juillet 2022']
+
+FILE: onda_excel\Dossier communication Août 2022\01 au 31 juillet 2022\Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois de Juillet 19 22.xlsx
+  - Sheet [Feuil1]: ['MOHAMMED V', '983765', '99185', '1082950', '851221', '87108', '938329']
+
+FILE: onda_excel\Dossier communication Août 2022\01 au 31 juillet 2022\01 au 31 Aout 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Août 19- 22.xlsx
+  - Sheet [Feuil1]: ['AEROPORT/SECTEUR', 'Août 2019', 'Août 2022']
+
+FILE: onda_excel\Dossier communication Août 2022\01 au 31 juillet 2022\01 au 31 Aout 2022\Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois d'Août 19-22.xlsx
+  - Sheet [Feuil1]: ['MOHAMMED V', '1066092', '106653', '1172745', '870648', '86498', '957146']
+
+FILE: onda_excel\Dossier communication Août 2022\01 au 31 mai 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Mai 19 22.xlsx
+  - Sheet [Feuil4]: ['AEROPORT/SECTEUR', 'Mai 2019', 'Mai 2022']
+
+FILE: onda_excel\Dossier communication Août 2022\01 au 31 mai 2022\Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois de Mai 19 22.xlsx
+  - Sheet [Feuil3]: ['MOHAMMED V', '536471', '71456', '607927', '541851', '68242', '610093']
+
+FILE: onda_excel\Dossier communication Août 2022\01 au 31 mars 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Mars 19 22.xlsx
+  - Sheet [Feuil4]: ['AEROPORT/SECTEUR', 'Mars 2019', 'Mars 2022']
+
+FILE: onda_excel\Dossier communication Août 2022\01 au 31 mars 2022\Ventilation du trafic aérien commercial des passagers en national international et par aéroport au titre des mois de Mars  19 22.xlsx
+  - Sheet [Feuil3]: ['MOHAMMED V', '702804', '96168', '798972', '499030', '66454', '565484']
+
+FILE: onda_excel\Dossier communication Août 2022\07 au 28 fev 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Février 19 22.xlsx
+  - Sheet [Feuil4]: ['AEROPORT/SECTEUR', '07 au 28 Fev 2019', '07 au 28 Fev 2022']
+
+FILE: onda_excel\Dossier communication Août 2022\07 au 28 fev 2022\Ventilation du trafic aérien commercial des passagers en national international et par aéroport au titre des mois de Février 19 22.xlsx
+  - Sheet [Feuil3]: ['MOHAMMED V', '455696', '58718', '514414', '328981', '43353', '372334']
+
+FILE: onda_excel\Dossier communication Août 2022\07 Fev au 31 Août 2022-2019\Trafic aérien internarional des passagers par secteur géographique et par aéroport.xlsx
+  - Sheet [Feuil1]: ['AEROPORT/SECTEUR', '7 Fev au 31 Août 2019', '7 fev au 31 Août 2022', 'Taux de Récupération']
+
+FILE: onda_excel\Dossier communication Août 2022\07 Fev au 31 Août 2022-2019\Ventilation du trafic aérien commercial des passagers en national et international 07 Fev au 31 Août 19-22.xlsx
+  - Sheet [Feuil1]: ['MED V', '5367693', '642764', '6010457', '4100744', '478702', '4579446']
+
+FILE: onda_excel\Dossier communication Juillet 2022\Fret Juillet 2022-2019.xlsx
+  - Sheet [Feuil1]: ['AEROPORT', 'Juillet', 'Juillet', 'Var']
+
+FILE: onda_excel\Dossier communication Juillet 2022\Top 5 des Routes aériennes internationales juillet 2022-2019.xlsx
+  - Sheet [Feuil1]: ['ROUTES AERIENNES', 'Passagers', 'Part (%)', 'ROUTES AERIENNES', 'Passagers', 'Part (%)']
+
+FILE: onda_excel\Dossier communication Juillet 2022\Trafic aérien Mouvements du 07 Fev au 31 Juillet 2022-2019.xlsx
+  - Sheet [Feuil1]: ['MOHAMMED V', '3622', '4845.0', '0.7475748194014448', '5330', '7081.0', '0.7527185425787318', '4882', '7696.0', '0.6343555093555093', '5624', '6344.0', '0.8865069356872636', '6028', '7950.0', '0.7582389937106918', '7455', '9171.0', '0.8128884527314361', '32941', '43087.0', '0.7645229419546499']
+
+FILE: onda_excel\Dossier communication Juillet 2022\01 au 30 avril 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Avril 19 22.xlsx
+  - Sheet [Feuil4]: ['AEROPORT/SECTEUR', 'Avril 2019', 'Avril 2022']
+
+FILE: onda_excel\Dossier communication Juillet 2022\01 au 30 avril 2022\Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre des mois d Avril 19 22.xlsx
+  - Sheet [Feuil3]: ['MOHAMMED V', '826578', '122631', '949209', '407753', '52013', '459766']
+
+FILE: onda_excel\Dossier communication Juillet 2022\01 au 30 juin 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Juin 19 22.xlsx
+  - Sheet [Feuil1]: ['AEROPORT/SECTEUR', 'Juin 2019', 'Juin 2022']
+
+FILE: onda_excel\Dossier communication Juillet 2022\01 au 30 juin 2022\Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois de Juin 19 22.xlsx
+  - Sheet [Feuil1]: ['MOHAMMED V', '790907', '91167', '882074', '606640', '71820', '678460']
+
+FILE: onda_excel\Dossier communication Juillet 2022\01 au 31 juillet 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Juillet 19 22.xlsx
+  - Sheet [Feuil1]: ['AEROPORT/SECTEUR', 'Juillet 2019', 'Juillet 2022']
+
+FILE: onda_excel\Dossier communication Juillet 2022\01 au 31 juillet 2022\Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois de Juillet 19 22.xlsx
+  - Sheet [Feuil1]: ['MOHAMMED V', '983765', '99185', '1082950', '851221', '87108', '938329']
+
+FILE: onda_excel\Dossier communication Juillet 2022\01 au 31 mai 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Mai 19 22.xlsx
+  - Sheet [Feuil4]: ['AEROPORT/SECTEUR', 'Mai 2019', 'Mai 2022']
+
+FILE: onda_excel\Dossier communication Juillet 2022\01 au 31 mai 2022\Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois de Mai 19 22.xlsx
+  - Sheet [Feuil3]: ['MOHAMMED V', '536471', '71456', '607927', '541851', '68242', '610093']
+
+FILE: onda_excel\Dossier communication Juillet 2022\01 au 31 mars 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Mars 19 22.xlsx
+  - Sheet [Feuil4]: ['AEROPORT/SECTEUR', 'Mars 2019', 'Mars 2022']
+
+FILE: onda_excel\Dossier communication Juillet 2022\01 au 31 mars 2022\Ventilation du trafic aérien commercial des passagers en national international et par aéroport au titre des mois de Mars  19 22.xlsx
+  - Sheet [Feuil3]: ['MOHAMMED V', '702804', '96168', '798972', '499030', '66454', '565484']
+
+FILE: onda_excel\Dossier communication Juillet 2022\07 au 28 fev 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Février 19 22.xlsx
+  - Sheet [Feuil4]: ['AEROPORT/SECTEUR', '07 au 28 Fev 2019', '07 au 28 Fev 2022']
+
+FILE: onda_excel\Dossier communication Juillet 2022\07 au 28 fev 2022\Ventilation du trafic aérien commercial des passagers en national international et par aéroport au titre des mois de Février 19 22.xlsx
+  - Sheet [Feuil3]: ['MOHAMMED V', '455696', '58718', '514414', '328981', '43353', '372334']
+
+FILE: onda_excel\Dossier communication Juillet 2022\07 Fev au 31 Juillet 2022-2019\Trafic aérien internarional des passagers par secteur géographique et par aéroport.xlsx
+  - Sheet [Feuil1]: ['AEROPORT/SECTEUR', '7 Fev au 31 Juillet 2019', '7 fev au 31 Juillet 2022', 'Taux de Récupération']
+
+FILE: onda_excel\Dossier communication Juillet 2022\07 Fev au 31 Juillet 2022-2019\Ventilation du trafic aérien commercial des passagers en national  international et par aéroport du 07 Fev au 31 Juillet 19 22.xlsx
+  - Sheet [Feuil1]: ['MOHAMMED V', '4301601', '536111', '4837712', '3230096', '392204', '3622300']
+
+
+============================================================
+SECTION: onda_pdf
+============================================================
+
+
+
+
+============================================================
+SECTION: onda_pdf
+============================================================
+
+[PDF] onda_pdf\CP+Bilan+reprise+2022+v+fr.pdf
+  Pages: 3
+  Page 1 preview: Page 1 sur 3 Communication et Relations Publiques Communiqué de presse n°04/2022 Aéroport Casablanca Mohammed V : Bilan d’activité du 7 au 28 février 2022  Trafic aérien international : o 328 627 passagers ; o 50% du volume du trafic aérien global ; o Taux de récupération de 72% par rapport à la même période de 2019, largement supérieur à la moyenne nationale qui est de 55% Durant la période alla
+  Page 2 preview: Page 2 sur 3 MISE EN PLACE DE L’INFRASTRUCTURE NECESSAIRE : Deux chapiteaux d’une superficie globale de 1 500 m² ont été installés et équipés pour permettre au personnel de la Santé de procéder aux tests antigéniques et les tests PCR dans les meilleures conditions. Aujourd’hui, les tests de dépistage n’étant plus systématiques pour tous les passagers, les formalités du dépistage antigénique rapide
+  Page 3 preview: Page 3 sur 3  Site internet www.onda.ma : Donne toutes les informations pratiques sur les services disponibles au niveau des aéroports (boutiques, restaurants et horaires de vol…).  Connexion WIFI : Les passagers peuvent se connecter gratuitement via tous les supports (Smartphones, tablettes, ordinateurs,…).  Centre de relations clients : Opérationnel 24h/24, il permet d’obtenir toutes les info
+
+[PDF] onda_pdf\CP+trafic+Aout+2022+v+fr.pdf
+  Pages: 4
+  Page 1 preview: 1 Communication et Relations Publiques Communiqué de presse n°16/2022 Aéroports du Maroc : Trafic aérien du mois d’août 2022  La reprise du trafic aérien pour le mois d’août continue avec la récupération de 94% du trafic passagers et 91% des vols enregistrés durant la même période de 2019 ;  Récupération de 74% du trafic cumulé des passagers durant les 8 premiers mois de l’année en cours. Ce tau
+  Page 2 preview: 2 Durant le mois d’août 2022, la plupart des aéroports ont atteint, voire dépassé, le volume du trafic aérien passagers enregistré durant la même période de 2019. Cette tendance haussière a été constatée dès le début de la saison estivale. Durant la période du 5 juin à fin août, plusieurs aéroports ont dépassé le niveau d’activité de 2019, en enregistrant des taux de récupération qui dépassent les
+  Page 3 preview: 3 Répartition du trafic aérien commercial par faisceau géographique : L’Europe, qui représente plus de 83% du trafic aérien international, a enregistré durant le mois d’août, un taux de récupération de l’ordre de 105% par rapport à août 2019. Mouvements aéroportuaires : Durant ce mois d’août, il y a eu 18 918 mouvements aéroportuaires, contre 20 678 mouvements enregistrés durant la même période de
+
+[PDF] onda_pdf\CP+trafic+année+2021+VF.pdf
+  Pages: 3
+  Page 1 preview: 1 Communication et Relations Publiques Communiqué de presse n°02/2022 Aéroports du Maroc : Trafic aérien de l’année 2021  Amélioration du trafic aérien de l’année 2021 par rapport à l’année 2020 : o Passagers : +38,9% o Mouvements aéroportuaires : +42% o Fret aérien : +13,94% Trafic aérien commercial de l’année 2021 : Durant l’année 2021, qui a été marquée par la persistance de la crise sanitaire
+  Page 2 preview: 2 Trafic aérien commercial par aéroport : Aéroports Année 2021 Année 2020 Année 2019 Var 2021/ 2020 (%) Var 2021/ 2019 (%) MOHAMMED V 4 150 015 2 998 567 10 313 196 38,40 -59,76 MARRAKECH 1 525 491 1 509 127 6 399 145 1,08 -76,16 TANGER 868 842 490 724 1 356 664 77,05 -35,96 FES-SAISS 654 946 412 951 1 418 950 58,60 -53,84 AGADIR 605 048 587 633 2 009 040 2,96 -69,88 NADOR 579 417 276 203 773 059 
+  Page 3 preview: 3 Répartition du trafic aérien commercial par faisceau géographique : PASSAGERS Année 2021 Année 2020 Année 2019 Var 2021/ 2020 (%) Var 2021/ 2019 (%) Part Année 2021 (%) EUROPE 6 994 861 4 907 693 17 477 008 42,53 -59,98 83,71% MOYEN ET EXTREME ORIENT 491 099 367 649 1 741 102 33,58 -71,79 5,88% AFRIQUE 433 638 384 457 1 368 098 12,79 -68,30 5,19% AMERIQUE DU NORD 286 480 157 077 615 258 82,38 -5
+
+[PDF] onda_pdf\CP+trafic+mars+2022+v+fr.pdf
+  Pages: 4
+  Page 1 preview: 1 Communication et Relations Publiques Communiqué de presse n°07/2022 Aéroports du Maroc : Trafic aérien du mois de mars 2022 et perspectives pour l’année 2022  1 452 030 passagers et 13 543 mouvements aéroportuaires durant le mois de mars avec des taux de récupération respectivement de 70% et 80% par rapport à la même période de 2019 ;  2 228 723 passagers à travers 21 330 vols depuis le 7 févr
+  Page 2 preview: 2 Les aéroports des régions du Nord et de l’Oriental ont connu les plus fortes progressions, avec des taux de récupération dépassant les 100%. Mouvements aéroportuaires : A noter que sur les 26 aéroports ouverts à la circulation aérienne, à peine 17 aéroports ont été desservis depuis la réouverture du ciel aérien. Trafic domestique : Avec 170 735 passagers accueillis durant le mois de mars 2022, l
+  Page 3 preview: 3 Le trafic aérien international a, quant à lui, enregistré 1 281 295 passagers soit un taux de 71% par rapport à la même période de 2019. Hormis les marchés de l’Amérique du Sud et des Pays de Maghreb, tous les autres marchés ont enregistré des taux de récupération supérieurs à 65% par rapport à la même période de 2019. L’Europe qui représente plus de 82% du trafic aérien international, a enregis
+
+[PDF] onda_pdf\Communiqué+trafic+aérien++1+er+semestre+2022+VF.pdf
+  Pages: 4
+  Page 1 preview: 1 Communication et Relations Publiques Communiqué de presse n°12/2022 Aéroports du Maroc : Trafic aérien du premier semestre de l’année 2022  7 439 275 passagers et 70 680 mouvements aéroportuaires durant le premier semestre de l’année 2022.  Taux de récupération du trafic aérien passagers en augmentation depuis la réouverture des frontières aériennes : Mois Janvier Février Mars Avril Mai Juin C
+  Page 2 preview: 2 Les aéroports du Royaume ont enregistré, durant le premier semestre 2022, un volume de trafic commercial de 7 439 275 passagers, à travers 70 680 vols, soit un taux de récupération par rapport à la même période de l'année 2019 de 64 % pour les passagers et de 72 % pour les mouvements aéroportuaires, et ce en dépit de la reprise tardive du trafic international qui n’a eu lieu qu’à partir du 7 fév
+  Page 3 preview: 3 Durant le premier semestre 2022, les mouvements aéroportuaires sont de 70 680, contre 98 793 mouvements enregistrés durant la même période de 2019, soit un taux de récupération de 72 %. La part de l’aéroport Mohammed V est de 39 % de ce trafic, celle de Marrakech Menara (20 %), et celle de Tanger Ibn Batouta (9 %). Fret aérien : Le fret aérien a enregistré durant le premier semestre 2022 un taux
+
+[PDF] onda_pdf\Note+trafic+mai+2022+v+fr.pdf
+  Pages: 3
+  Page 1 preview: 1 Communication et Relations Publiques Note relative au trafic aérien du mois de mai 2022 Poursuite de la reprise progressive du trafic aérien :  Pour le mois de mai, récupération de : o 109% des passagers o 104% des mouvements aéroportuaires ;  Depuis le 7 février à fin mai 2022, récupération de : o 73% des passagers ; o 83% des mouvements aéroportuaires Trafic aérien commercial : Les aéroports
+  Page 2 preview: 2 Durant le mois de mai 2022, la grande majorité des aéroports ont atteint, voire dépassé, le volume du trafic aérien passagers enregistré durant la même période de 2019. La récupération est consolidée, pour le trafic cumulé du 7 février à fin mai 2022 pour les aéroports des régions du Nord et de l’Oriental qui ont enregistré des taux de récupération supérieurs ou égaux à 100% (Tanger : 103%, Oujd
+  Page 3 preview: 3 Hormis les marchés de l’Amérique du Sud et des Pays du Maghreb, tous les autres marchés ont enregistré des taux de récupération avoisinant les 100% durant le mois de mai, et supérieurs à 60% pour le trafic cumulé du 7 février au 31 mai 2022. L’Europe, qui représente plus de 84% du trafic aérien international, a enregistré durant cette période, un taux de récupération de l’ordre de 115% par rappo

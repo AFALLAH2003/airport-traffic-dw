@@ -1,0 +1,23 @@
+﻿airport_code,airport_name,city,is_aggregate,region_code,region_name,airport_type,latitude,longitude,csv_ident,code_is_internal,in_onda_reports,in_hcp,months_observed_recent,avg_monthly_passengers_recent,include_in_clustering
+CMN,Casablanca Mohammed V,Casablanca,0,MA-06,Casablanca-Settat,large_airport,33.3675,-7.58997,GMMN,0,1,1,46,913916.9347826086,1
+RAK,Marrakech Menara,Marrakesh,0,MA-07,Marrakech-Safi,large_airport,31.604807,-8.035788,GMMX,0,1,1,46,772284.2391304348,1
+AGA,Agadir Al Massira,Agadir (Temsia),0,MA-09,Souss-Massa,large_airport,30.322478,-9.412003,GMAD,0,1,1,46,262028.41304347827,1
+TNG,Tanger Ibn Battouta,Tangier,0,MA-01,Tanger-Tétouan-Al Hoceïma,large_airport,35.731741,-5.921459,GMTT,0,1,1,46,211305.73913043478,1
+FEZ,Fès Saïss,Saïss,0,MA-03,Fès-Meknès,large_airport,33.927299,-4.97796,GMFF,0,1,1,46,156862.36956521738,1
+RBA,Rabat-Salé,Rabat,0,MA-04,Rabat-Salé-Kénitra,large_airport,34.051498,-6.75152,GMME,0,1,1,46,156998.76086956522,1
+NDR,Nador Al Aroui,Al Aaroui,0,MA-02,Oriental,large_airport,34.9888,-3.02821,GMMW,0,1,1,46,95474.45652173914,1
+OUD,Oujda Angads,Ahl Angad,0,MA-02,Oriental,large_airport,34.789558,-1.926041,GMFO,0,1,1,46,90022.5,1
+ESU,Essaouira Mogador,Essaouira,0,MA-07,Marrakech-Safi,medium_airport,31.397499,-9.68167,GMMI,0,1,1,46,22058.434782608696,1
+OZZ,Ouarzazate,Ouarzazate,0,MA-08,Drâa-Tafilalet,large_airport,30.9391,-6.90943,GMMZ,0,1,1,46,12434.565217391304,1
+EUN,Laâyoune Hassan Ier,Laâyoune,0,MA-11,Laâyoune-Sakia El Hamra,,,,,0,1,1,46,24401.82608695652,1
+VIL,Dakhla,Dakhla,0,MA-12,Dakhla-Oued Ed-Dahab,,,,,0,1,1,46,26252.891304347828,1
+TTU,Tétouan Sania Ramel,Tétouan,0,MA-01,Tanger-Tétouan-Al Hoceïma,large_airport,35.594299,-5.32002,GMTN,0,1,1,46,29005.869565217392,1
+AHU,Al Hoceima Charif Al Idrissi,Al Hoceima,0,MA-01,Tanger-Tétouan-Al Hoceïma,medium_airport,35.177101,-3.83952,GMTA,0,1,1,46,10471.0,1
+ERH,Errachidia Moulay Ali Cherif,Errachidia,0,MA-08,Drâa-Tafilalet,medium_airport,31.9475002289,-4.39833021164,GMFK,0,1,1,46,8767.391304347826,1
+GLN,Guelmim,Guelmim,0,MA-10,Guelmim-Oued Noun,small_airport,29.026699,-10.0503,MA-GLN,0,1,0,46,2486.1521739130435,1
+TTA,Tan-Tan,Tan Tan,0,MA-10,Guelmim-Oued Noun,medium_airport,28.447563,-11.161749,GMAT,0,1,1,46,1086.195652173913,1
+OZG,Zagora,Zagora,0,MA-08,Drâa-Tafilalet,large_airport,30.265788,-5.860808,GMAZ,0,1,0,46,1043.9130434782608,1
+BEM,Béni Mellal,Oulad Yaich,0,MA-05,Béni Mellal-Khénifra,large_airport,32.401895,-6.315905,GMMD,0,1,0,30,6715.333333333333,1
+UAR,Bouarfa,Bouarfa,0,MA-02,Oriental,medium_airport,32.514306,-1.983056,GMFB,0,1,0,6,301.6666666666667,0
+SMW,Es-Smara,Smara,0,MA-11,Laâyoune-Sakia El Hamra,,,,,0,1,0,12,846.5,0
+BSM,Benslimane (code interne),Benslimane,0,MA-06,Casablanca-Settat,,,,,1,1,0,43,19.46511627906977,0

@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# PyCharm
+.idea/
+
+# Excel temporary files
+~$*
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Visual Studio (SSIS / SSAS / SSRS projects)
+bin/
+obj/
+*.user
+.vs/
+
+# Raw data sources (not versioned)
+hcp_raw/
+onda_excel/
+onda_pdf/

@@ -1,0 +1,1439 @@
+================================================================================
+1. FILE: morocco_airports.csv
+================================================================================
+Shape: 45 rows x 10 columns
+Columns: ['id', 'ident', 'type', 'name', 'municipality', 'iso_region', 'iata_code', 'gps_code', 'latitude_deg', 'longitude_deg']
+Sample (first 3 rows):
+  id ident           type               name    municipality iso_region iata_code gps_code  latitude_deg  longitude_deg
+3100  GMAA  small_airport   Inezgane Airport        Inezgane      MA-09       NaN     GMAA     30.381399      -9.546310
+3101  GMAD  large_airport Al Massira Airport Agadir (Temsia)      MA-09       AGA     GMAD     30.322478      -9.412003
+3102  GMAT medium_airport    Tan Tan Airport         Tan Tan      MA-10       TTA     GMAT     28.447563     -11.161749
+
+================================================================================
+FOLDER: hcp_raw
+================================================================================
+
+--- File: hcp_raw\Mouvements des avions_2026-11-24.xlsx ---
+Sheets (1): ['Données']
+  [Sheet: Données]
+    Row 0: C0:Périodes | C1:2021.0 | C2:2020.0 | C3:2019.0
+    Row 1: C0:Aéroport
+    Row 2: C0:Mohammed V | C1:48076.0 | C2:34962.0 | C3:94275.0
+    Row 3: C0:Agadir-Inezgane | C1:7755.0 | C2:6480.0 | C3:17895.0
+    Row 4: C0:Marrakech-Menara | C1:17756.0 | C2:14187.0 | C3:49798.0
+    Row 5: C0:Rabat-Sale | C1:6381.0 | C2:3815.0 | C3:10402.0
+    Row 6: C0:Tanger-Boukhalef | C1:11232.0 | C2:6857.0 | C3:14671.0
+    Row 7: C0:Total | C1:126191.0 | C2:87414.0 | C3:235175.0
+
+--- File: hcp_raw\Nombre de voyageurs (Trafic commercial)_2026-11-24.xlsx ---
+Sheets (1): ['Données']
+  [Sheet: Données]
+    Row 0: C0:Périodes | C2:2021.0 | C3:2020.0 | C4:2019.0
+    Row 1: C0:Aéroport | C1:Destination du voyageur
+    Row 2: C0:Mohammed V | C1:Arrivées | C2:2002096.0 | C3:1477277.0 | C4:5135828.0
+    Row 3: C1:Départs | C2:2127552.0 | C3:1521096.0 | C4:5170465.0
+    Row 4: C1:Transit | C2:20367.0 | C3:2277.0 | C4:11366.0
+    Row 5: C1:Total | C2:4150015.0 | C3:2998373.0 | C4:10306293.0
+    Row 6: C0:Agadir-Inezgane | C1:Arrivées | C2:296972.0 | C3:284449.0 | C4:994198.0
+    Row 7: C1:Départs | C2:303392.0 | C3:303184.0 | C4:1014267.0
+
+================================================================================
+FOLDER: onda_excel
+================================================================================
+
+--- File: onda_excel\Copie+de+Dossier+communication+Mars+2024.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Mars et Cumul à fin Mars 2024/2023
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C7:MOUVEMENTS | C13:FRET (tonnes)
+    Row 7: C1:Mars | C3:Var 24-23 | C4:CUMUL | C6:Var Cumul 24-23 | C7:Mars | C9:Var 24-23 | C10:CUMUL | C12:Var Cumul 24-23 | C13:Mars | C15:Var 24-23
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Mars et cumul à fin Mars 2023-2024
+    Row 4: C0:AEROPORT | C1:2023-03-01 00:00:00 | C4:2024-03-01 00:00:00 | C7:Variation Mars 24/23 | C9:Cumul Mars 2023 | C12:Cumul Mars 2024 | C15:Variation Cumul Mars 24/23
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:656597 | C2:80173 | C3:736770 | C4:631719 | C5:73311 | C6:705030 | C7:-0.037889298915468696 | C8:-0.08558991181569855 | C9:1897800
+    Row 7: C0:MARRAKECH | C1:629743 | C2:16728 | C3:646471 | C4:751161 | C5:16548 | C6:767709 | C7:0.19280563658508312 | C8:-0.010760401721664276 | C9:1676771
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Mars et Cumul à fin Mars 2023-2024
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Mars | C3:Var Février 24-23 | C4:Cumul Mars | C6:Var Cumul Février 24-23
+    Row 5: C1:2024 | C2:2023.0 | C4:2024 | C5:2023.0
+    Row 6: C0:EUROPE | C1:1779483 | C2:1604028.0 | C3:0.10938400077804128 | C4:5219410 | C5:4520299.0 | C6:0.15466034437102502
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:160652 | C2:150315.0 | C3:0.06876891860426437 | C4:443604 | C5:376036.0 | C6:0.17968492378389303
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Mars 2024
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MARRAKECH-LONDRES-GATW. | C1:63248 | C2:2.9753697454837633
+    Row 6: C0:MARRAKECH-PARIS-ORLY | C1:60142 | C2:2.82925447813187
+    Row 7: C0:MOHAMMED V-JEDDAH | C1:45293 | C2:2.130714360646915
+
+--- File: onda_excel\Dossier+communication+Aout+2024.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien commercial par aéroport
+    Row 4: C0:Aout et Cumul à fin Aout 2024/2023
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C7:MOUVEMENTS | C13:FRET (tonnes)
+    Row 7: C1:Aout | C3:Var 24-23 | C4:CUMUL | C6:Var Cumul 24-23 | C7:Aout | C9:Var 24-23 | C10:CUMUL | C12:Var Cumul 24-23 | C13:Aout | C15:Var 24-23
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois d'Aout et cumul à fin Aout 2023-2024
+    Row 4: C0:AEROPORT | C1:2023-08-01 00:00:00 | C4:2024-08-01 00:00:00 | C7:Variation Aout 24/23 | C9:Cumul Aout 2023 | C12:Cumul Aout 2024 | C15:Variation Cumul Aout 24/23
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:935474 | C2:98008 | C3:1033482 | C4:997763 | C5:104319 | C6:1102082 | C7:0.06658549569523044 | C8:0.06439270263651947 | C9:5852311
+    Row 7: C0:MARRAKECH | C1:539664 | C2:14465 | C3:554129 | C4:705709 | C5:34770 | C6:740479 | C7:0.3076821874351448 | C8:1.4037331489802973 | C9:4417613
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Aout et Cumul à fin Aout 2023-2024
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Aout | C3:Var Juillet 24-23 | C4:Cumul Aout | C6:Var Cumul Juillet 24-23
+    Row 5: C1:2024 | C2:2023.0 | C4:2024 | C5:2023.0
+    Row 6: C0:EUROPE | C1:2398888 | C2:2060529.0 | C3:0.16420977331549325 | C4:15939842 | C5:13427147.0 | C6:0.18713543539815272
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:174868 | C2:158431.0 | C3:0.10374863505248341 | C4:1294013 | C5:1156563.0 | C6:0.1188435044178311
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Aout 2024
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MARRAKECH-PARIS-ORLY | C1:70369 | C2:2.4275878913493227
+    Row 6: C0:MOHAMMED V-PARIS-ORLY | C1:65825 | C2:2.2708291001445122
+    Row 7: C0:MOHAMMED V-PARIS-CDG | C1:55194 | C2:1.9040811447531514
+
+--- File: onda_excel\Dossier+communication+Août+2023.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Août et Cumul à fin Août 2023/2022/2019
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C9:MOUVEMENTS | C17:FRET (tonnes)
+    Row 7: C1:AOÛT | C4:Taux Récupération 23-19 | C5:CUMUL | C8:Taux Récupération 23-19 | C9:AOÛT | C12:Taux Récupération 23-19 | C13:CUMUL | C16:Taux Récupération 23-19 | C17:AOÛT | C20:Taux Récupération 23-19
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois d'Août et cumul à fin Août 2019-2023
+    Row 4: C0:AEROPORT | C1:2019-08-01 00:00:00 | C4:2023-08-01 00:00:00 | C7:Taux de récupération Août 23/19 | C9:Cumul Août 2019 | C12:Cumul Août 2023 | C15:Taux de récupération Cumul Août 23/19
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:1066092 | C2:106653 | C3:1172745 | C4:811987 | C5:74745 | C6:886732 | C7:0.7616481504410502 | C8:0.7008241680965374 | C9:6188615
+    Row 7: C0:MARRAKECH | C1:494204 | C2:31610 | C3:525814 | C4:538364 | C5:14448 | C6:552812 | C7:1.0893558125794207 | C8:0.4570705472951598 | C9:3921128
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Août et Cumul à fin Août 2019-2023
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Août | C3:Taux de récupération | C4:Cumul Août | C6:Taux de récupération
+    Row 5: C1:2023 | C2:2019.0 | C4:2023 | C5:2019.0
+    Row 6: C0:EUROPE | C1:2006179 | C2:1775595.0 | C3:1.1298629473500432 | C4:13148010 | C5:11576796.0 | C6:1.1357209715019596
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:151922 | C2:217274.0 | C3:0.6992184983016836 | C4:1126317 | C5:1239587.0 | C6:0.9086227913006509
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Août 2023
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MED V-PARIS-ORLY | C1:74763 | C2:3.16798547768304
+    Row 6: C0:MARRAKECH-PARIS-ORLY | C1:63885 | C2:2.7070442898463276
+    Row 7: C0:MED V-PARIS-CDG | C1:43191 | C2:1.830162791308644
+
+--- File: onda_excel\Dossier+communication+Août+2026.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 5: C0:Trafic aérien commercial par aéroport
+    Row 6: C0:Août et Cumul à fin Août 2026/2025
+  [Sheet: Ventilation nat-inter]
+    Row 5: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois d'Août et le Cumul à fin Août 2026-2025
+    Row 7: C0:AEROPORT | C1:2025-08-01 00:00:00 | C4:2026-08-01 00:00:00 | C7:Variation Août 26/25 | C9:Cumul à fin Août 2025 | C12:Cumul à fin Août 2026 | C15:Variation Cumul 26/25
+  [Sheet: Ventilation par région]
+    Row 5: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Août et Cumul à fin Août 2025-2026
+    Row 7: C1:Trafic Global
+  [Sheet: Top 5 des routes]
+    Row 5: C0:TOP 5 des Routes Aériennes internationales Août 2026
+    Row 6: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 7: C0:MED V-PARIS-ORLY | C1:80169 | C2:2.404564560529377
+
+--- File: onda_excel\Dossier+communication+Avril+2023.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Avril et  Cumul à fin Avril 2023/2022/2019
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C9:MOUVEMENTS | C17:FRET (tonnes)
+    Row 7: C1:AVRIL | C4:Taux Récupération 23-19 | C5:CUMUL | C8:Taux Récupération 23-19 | C9:AVRIL | C12:Taux Récupération 23-19 | C13:CUMUL | C16:Taux Récupération 23-19 | C17:AVRIL | C20:Taux Récupération 23-19
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois d'Avril et cumul à fin Avril 2019-2023
+    Row 4: C0:AEROPORT | C1:2019-04-01 00:00:00 | C4:2023-04-01 00:00:00 | C7:Taux de récupération Avril 23/19 | C9:Cumul Avril 2019 | C12:Cumul Avril 2023 | C15:Taux de récupération Cumul Avril 23/19
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:826578 | C2:122631 | C3:949209 | C4:526051 | C5:60516 | C6:586567 | C7:0.6364202773361981 | C8:0.4934804413239719 | C9:2806000
+    Row 7: C0:MARRAKECH | C1:571877 | C2:45892 | C3:617769 | C4:550896 | C5:22718 | C6:573614 | C7:0.9633120408759226 | C8:0.49503181382376016 | C9:2007991
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Avril et Cumul à fin Avril 2019-2023
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Avril | C3:Taux de récupération | C4:Cumul Avril | C6:Taux de récupération
+    Row 5: C1:2023 | C2:2019.0 | C4:2023 | C5:2019.0
+    Row 6: C0:EUROPE | C1:1478927 | C2:1614076.0 | C3:0.9162685028462104 | C4:5957032 | C5:5594697.0 | C6:1.06476400777379
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:129599 | C2:168940.0 | C3:0.7671303421333018 | C4:499769 | C5:528302.0 | C6:0.9459911187161888
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Avril 2023
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MARRAKECH-PARIS-ORLY | C1:51370 | C2:2.9558934888634685
+    Row 6: C0:MOHAMMED V-PARIS-ORLY | C1:45346 | C2:2.6092650602686946
+    Row 7: C0:MARRAKECH-PARIS-CDG | C1:41594 | C2:2.3933703285144463
+
+--- File: onda_excel\Dossier+communication+Avril+2024.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Avril et Cumul à fin Avril 2024/2023
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C7:MOUVEMENTS | C13:FRET (tonnes)
+    Row 7: C1:AVRIL | C3:Var 24-23 | C4:CUMUL | C6:Var Cumul 24-23 | C7:Avril | C9:Var 24-23 | C10:CUMUL | C12:Var Cumul 24-23 | C13:Avril | C15:Var 24-23
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois d'Avril et cumul à fin Avril 2023-2024
+    Row 4: C0:AEROPORT | C1:2023-04-01 00:00:00 | C4:2024-04-01 00:00:00 | C7:Variation Avril 24/23 | C9:Cumul Avril 2023 | C12:Cumul Avril 2024 | C15:Variation Cumul Avril 24/23
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:614942 | C2:83443 | C3:698385 | C4:730872 | C5:92026 | C6:822898 | C7:0.18852184433653907 | C8:0.10286063540380859 | C9:2512742
+    Row 7: C0:MARRAKECH | C1:552720 | C2:22747 | C3:575467 | C4:768420 | C5:38113 | C6:806533 | C7:0.3902518454190187 | C8:0.6755176506792104 | C9:2229491
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Avril et Cumul à fin Avril 2023-2024
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Avril | C3:Var Février 24-23 | C4:Cumul Avril | C6:Var Cumul Février 24-23
+    Row 5: C1:2024 | C2:2023.0 | C4:2024 | C5:2023.0
+    Row 6: C0:EUROPE | C1:1980720 | C2:1525739.0 | C3:0.29820369014621767 | C4:7204656 | C5:6046038.0 | C6:0.19163260303689789
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:177760 | C2:133830.0 | C3:0.3282522603302697 | C4:621704 | C5:509866.0 | C6:0.21934782864517344
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Avril 2024
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MARRAKECH-PARIS-ORLY | C1:64098 | C2:2.71976353867128
+    Row 6: C0:MOHAMMED V-PARIS-ORLY | C1:53904 | C2:2.287218537061011
+    Row 7: C0:MARRAKECH-PARIS-CDG | C1:53169 | C2:2.256031507810123
+
+--- File: onda_excel\Dossier+communication+Avril+2026.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 5: C0:Trafic aérien commercial par aéroport
+    Row 6: C0:Avril et Cumul à fin Avril 2026/2025
+  [Sheet: Ventilation nat-inter]
+    Row 5: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois d'Avril et le Cumul à fin Avril 2026-2025
+    Row 7: C0:AEROPORT | C1:2025-04-01 00:00:00 | C4:2026-04-01 00:00:00 | C7:Variation Avril 26/25 | C9:Cumul à fin Avril 2025 | C12:Cumul à fin Avril 2026 | C15:Variation Cumul 26/25
+  [Sheet: Ventilation par région]
+    Row 5: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Avril et Cumul à fin Avril 2025-2026
+    Row 7: C1:Trafic Global
+  [Sheet: Top 5 des routes]
+    Row 5: C0:TOP 5 des Routes Aériennes internationales Avril 2026
+    Row 6: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 7: C0:MARRAKECH-PARIS-ORLY | C1:78229 | C2:2.57124760842649
+
+--- File: onda_excel\Dossier+communication+Décembre+2023.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Décembre et Cumul à fin Décembre 2023/2022/2019
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C9:MOUVEMENTS | C17:FRET (tonnes)
+    Row 7: C1:Décembre | C4:Taux Récupération 23-19 | C5:CUMUL | C8:Taux Récupération 23-19 | C9:Décembre | C12:Taux Récupération 23-19 | C13:CUMUL | C16:Taux Récupération 23-19 | C17:Décembre | C20:Taux Récupération 23-19
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Décembre et cumul à fin Décembre 2019-2023
+    Row 4: C0:AEROPORT | C1:2019-12-01 00:00:00 | C4:2023-12-01 00:00:00 | C7:Taux de récupération Décembre 23/19 | C9:Cumul Décembre 2019 | C12:Cumul Décembre2023 | C15:Taux de récupération Cumul Décembre 23/19
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:764079 | C2:91237 | C3:855316 | C4:733202 | C5:83752 | C6:816954 | C7:0.9595892571317888 | C8:0.9179609149796684 | C9:9189861
+    Row 7: C0:MARRAKECH | C1:497112 | C2:28067 | C3:525179 | C4:642393 | C5:16000 | C6:658393 | C7:1.292250036209144 | C8:0.5700644885452667 | C9:6032514
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Décembre et Cumul à fin Décembre 2019-2023
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Décembre | C3:Taux de récupération | C4:Cumul Décembre | C6:Taux de récupération
+    Row 5: C1:2023 | C2:2019.0 | C4:2023 | C5:2019.0
+    Row 6: C0:EUROPE | C1:1745670 | C2:1406867.0 | C3:1.2408209162628734 | C4:20145630 | C5:17477563.0 | C6:1.1526566947577301
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:135857 | C2:117000.0 | C3:1.1611709401709402 | C4:1693243 | C5:1741102.0 | C6:0.9725122365030883
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Décembre 2023
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MARRAKECH-PARIS-ORLY | C1:57806 | C2:2.726462762884147
+    Row 6: C0:MARRAKECH-LONDRES-GATW. | C1:56965 | C2:2.68679637559588
+    Row 7: C0:MOHAMMED V-PARIS-ORLY | C1:49894 | C2:2.3532874284908427
+
+--- File: onda_excel\Dossier+communication+Décembre+2025.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien commercial par aéroport
+    Row 4: C0:Décembre et Cumul à fin Décembre 2025/2024
+    Row 6: C1:PASSAGERS | C7:MOUVEMENTS | C13:FRET (tonnes)
+    Row 7: C1:Décembre | C3:Var 25-24 | C4:CUMUL | C6:Var Cumul 25-24 | C7:Décembre | C9:Var 25-24 | C10:CUMUL | C12:Var Cumul 25-24 | C13:Décembre | C15:Var 25-24
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Décembre et le Cumul à fin Décembre 2025-2024
+    Row 4: C0:AEROPORT | C1:2024-12-01 00:00:00 | C4:2025-12-01 00:00:00 | C7:Variation Décembre 25/24 | C9:Année 2024 | C12:Année 2025 | C15:Variation Année 25/24
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:803061 | C2:90624 | C3:893685 | C4:941676 | C5:100728 | C6:1042404 | C7:0.17260830746356753 | C8:0.1114936440677966 | C9:9368929
+    Row 7: C0:MARRAKECH | C1:782212 | C2:34007 | C3:816219 | C4:860752 | C5:38893 | C6:899645 | C7:0.10040756214427803 | C8:0.14367630193783631 | C9:8892355
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Décembre et Année 2024-2025
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Décembre | C3:Var Décembre 25-24 | C4:Année | C6:Var Année 25-24
+    Row 5: C1:2024 | C2:2025.0 | C4:2024 | C5:2025.0
+    Row 6: C0:EUROPE | C1:2083366 | C2:2279914.0 | C3:0.09434156072432787 | C4:24370005 | C5:26790058.0 | C6:0.09930457544017735
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:166469 | C2:199565.0 | C3:0.19881179078386957 | C4:1936799 | C5:2254303.0 | C6:0.16393234403776535
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Décembre 2025
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MARRAKECH-PARIS-ORLY | C1:69052 | C2:2.4529965477871096
+    Row 6: C0:MED V-PARIS-ORLY | C1:59511 | C2:2.114062989563788
+    Row 7: C0:MED V-JEDDAH | C1:57086 | C2:2.027917524864956
+
+--- File: onda_excel\Dossier+communication+Février+2023.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Février et  Cumul à fin Février 2023/2022/2019
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C9:MOUVEMENTS | C17:FRET (tonnes)
+    Row 7: C1:FEVRIER | C4:Taux Récupération 23-19 | C5:CUMUL | C8:Taux Récupération 23-19 | C9:FEVRIER | C12:Taux Récupération 23-19 | C13:CUMUL | C16:Taux Récupération 23-19 | C17:FEVRIER | C20:Taux Récupération 23-19
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Février et cumul à fin Février 2019-2023
+    Row 4: C0:AEROPORT | C1:2019-02-01 00:00:00 | C4:2023-02-01 00:00:00 | C7:Taux de récupération Cumul Février 23/19 | C9:Cumul Février 2019 | C12:Cumul Février 2023 | C15:Taux de récupération Cumul Février 23/19
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:572998 | C2:72418 | C3:645416 | C4:569557 | C5:67432 | C6:636989 | C7:0.9939947434371499 | C8:0.9311497141594631 | C9:1276476
+    Row 7: C0:MARRAKECH | C1:452145 | C2:23824 | C3:475969 | C4:533968 | C5:12881 | C6:546849 | C7:1.1809662829402072 | C8:0.5406732706514439 | C9:888981
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Février et Cumul à fin Février 2019-2023
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Février | C3:Taux de récupération | C4:Cumul Février | C6:Taux de récupération
+    Row 5: C1:2023 | C2:2019.0 | C4:2023 | C5:2019.0
+    Row 6: C0:EUROPE | C1:1424899 | C2:1214457.0 | C3:1.173280733694153 | C4:2901038 | C5:2514620.0 | C6:1.153668546340998
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:111173 | C2:106460.0 | C3:1.0442701484125494 | C4:221731 | C5:223354.0 | C6:0.9927335082425208
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Février 2023
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MOHAMMED V-PARIS-ORLY | C1:54213 | C2:3.204667051686214
+    Row 6: C0:MARRAKECH-PARIS-ORLY | C1:53428 | C2:3.158263723414883
+    Row 7: C0:MARRAKECH-LONDRES-GATW. | C1:41086 | C2:2.428697000453393
+
+--- File: onda_excel\Dossier+communication+Février+2024.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Février et Cumul à fin Février 2024/2023
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C7:MOUVEMENTS | C13:FRET (tonnes)
+    Row 7: C1:Février | C3:Var 24-23 | C4:CUMUL | C6:Var Cumul 24-23 | C7:Février | C9:Var 24-23 | C10:CUMUL | C12:Var Cumul 24-23 | C13:Février | C15:Var 24-23
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Février et cumul à fin Février 2023-2024
+    Row 4: C0:AEROPORT | C1:2023-02-01 00:00:00 | C4:2024-02-01 00:00:00 | C7:Variation Février 24/23 | C9:Cumul Février 2023 | C12:Cumul Février 2024 | C15:Variation Cumul Février 24/23
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:592623 | C2:72690 | C3:665313 | C4:671640 | C5:76345 | C6:747985 | C7:0.1333343457813821 | C8:0.05028201953501169 | C9:1241203
+    Row 7: C0:MARRAKECH | C1:535341 | C2:12945 | C3:548286 | C4:676607 | C5:13950 | C6:690557 | C7:0.2638804051996765 | C8:0.0776361529548088 | C9:1047028
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Février et Cumul à fin Février 2023-2024
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Février | C3:Var Février 24-23 | C4:Cumul Février | C6:Var Cumul Février 24-23
+    Row 5: C1:2024 | C2:2023.0 | C4:2024 | C5:2023.0
+    Row 6: C0:EUROPE | C1:1728541 | C2:1439836.0 | C3:0.2005124194699952 | C4:3435106 | C5:2916271.0 | C6:0.17791042053361983
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:143842 | C2:115163.0 | C3:0.24902963625469987 | C4:281731 | C5:225721.0 | C6:0.24813818829439885
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Février 2024
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MARRAKECH-PARIS-ORLY | C1:64594 | C2:3.12577728268265
+    Row 6: C0:MARRAKECH-LONDRES-GATW. | C1:63199 | C2:3.058271642695309
+    Row 7: C0:MOHAMMED V-PARIS-ORLY | C1:51363 | C2:2.485514112308093
+
+--- File: onda_excel\Dossier+communication+Février+2026.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 5: C0:Trafic aérien commercial par aéroport
+    Row 6: C0:Février et Cumul à fin Février 2026/2025
+  [Sheet: Ventilation nat-inter]
+    Row 5: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Février et le Cumul à fin Février 2026-2025
+    Row 7: C0:AEROPORT | C1:2025-02-01 00:00:00 | C4:2026-02-01 00:00:00 | C7:Variation Février 26/25 | C9:Cumul à fin Février 2025 | C12:Cumul à fin Février 2026 | C15:Variation Cumul 26/25
+  [Sheet: Ventilation par région]
+    Row 5: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Février et Cumul à fin Février 2025-2026
+    Row 7: C1:Trafic Global
+  [Sheet: Top 5 des routes]
+    Row 5: C0:TOP 5 des Routes Aériennes internationales Février 2026
+    Row 6: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 7: C0:MARRAKECH-PARIS-ORLY | C1:65475 | C2:2.6118143762879567
+
+--- File: onda_excel\Dossier+communication+Janvier+2023.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Janvier 2023/2022/2019
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C5:MOUVEMENTS | C9:FRET (tonnes)
+    Row 7: C1:JANVIER | C4:Taux Récupération 23-19 | C5:JANVIER | C8:Taux Récupération 23-19 | C9:JANVIER | C12:Taux Récupération 23-19
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Janvier 2019-2023
+    Row 4: C0:AEROPORT | C1:2019-01-01 00:00:00 | C4:2023-01-01 00:00:00 | C7:Taux de récupération Janvier-23/19
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:703478 | C2:81682 | C3:785160 | C4:645935 | C5:76467 | C6:722402 | C7:0.918202132831446 | C8:0.9361548443965623
+    Row 7: C0:MARRAKECH | C1:436836 | C2:27759 | C3:464595 | C4:509927 | C5:14382 | C6:524309 | C7:1.1673190854233626 | C8:0.5181022371122879
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Janvier 2019-2023
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Janvier | C3:Taux de récupération
+    Row 5: C1:2023 | C2:2019.0
+    Row 6: C0:EUROPE | C1:1471021 | C2:1300163.0 | C3:1.13141275363166
+    Row 7: C0:AFRIQUE (AUTRES RELATIONS) | C1:121530 | C2:123834.0 | C3:0.9813944474053975
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Janvier 2023
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MED V-PARIS-ORLY | C1:53851 | C2:3.0254152635405185
+    Row 6: C0:MARRAKECH-PARIS-ORLY | C1:46933 | C2:2.636753534080094
+    Row 7: C0:MARRAKECH-LONDRES-GATW. | C1:38764 | C2:2.177809089448379
+
+--- File: onda_excel\Dossier+communication+Janvier+2024.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Janvier 2024/2023/2019
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C5:MOUVEMENTS | C9:FRET (tonnes)
+    Row 7: C1:JANVIER | C4:Taux Récupération 24-19 | C5:JANVIER | C8:Taux Récupération 24-19 | C9:JANVIER | C12:Taux Récupération 24-19
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Janvier 2019-2023-2024
+    Row 4: C0:AEROPORT | C1:2019-01-01 00:00:00 | C4:2023-01-01 00:00:00 | C7:2024-01-01 00:00:00 | C10:Taux de récupération Janvier-24/19 | C12:Taux de récupération Janvier-24/23
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:TOTAL | C10:INTERNATIONAL
+    Row 6: C0:MOHAMMED V | C1:703478 | C2:81682 | C3:785160 | C4:648580 | C5:76723 | C6:725303 | C7:719317 | C8:78244 | C9:797561
+    Row 7: C0:MARRAKECH | C1:436836 | C2:27759 | C3:464595 | C4:511687 | C5:14482 | C6:526169 | C7:624913 | C8:14813 | C9:639726
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Janvier 2019-2024 | C5:Trafic aérien international des passagers par secteur géographique et par aéroport Janvier 2023-2024
+    Row 3: C1:Trafic Global | C6:Trafic Global
+    Row 4: C0:Passagers | C1:Janvier | C3:Taux de récupération | C5:Passagers | C6:Janvier | C8:Taux de récupération
+    Row 5: C1:2024 | C2:2019.0 | C6:2024 | C7:2023.0
+    Row 6: C0:EUROPE | C1:1701127 | C2:1300163.0 | C3:1.3083951781430483 | C5:EUROPE | C6:1701127 | C7:1476435.0 | C8:1.152185500885579
+    Row 7: C0:AFRIQUE (AUTRES RELATIONS) | C1:145059 | C2:123834.0 | C3:1.171398808081787 | C5:AFRIQUE (AUTRES RELATIONS) | C6:145059 | C7:121885.0 | C8:1.1901300406120523
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Janvier 2024
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MARRAKECH-PARIS-ORLY | C1:62300 | C2:3.0124778476498566
+    Row 6: C0:MARRAKECH-LONDRES-GATW. | C1:48636 | C2:2.3517636051091237
+    Row 7: C0:MOHAMMED V-PARIS-ORLY | C1:47872 | C2:2.314820859112262
+
+--- File: onda_excel\Dossier+communication+Janvier+2026.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien commercial par aéroport
+    Row 4: C0:Janvier 2026/2025
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C4:MOUVEMENTS | C7:FRET (tonnes)
+    Row 7: C1:Janvier | C3:Var 26-25 | C4:Janvier | C6:Var 26-25 | C7:Janvier | C9:Var 26-25
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Janvier 2026-2025
+    Row 4: C0:AEROPORT | C1:2025-01-01 00:00:00 | C4:2026-01-01 00:00:00 | C7:Variation Janvier 26/25
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:795361 | C2:83541 | C3:878902 | C4:968099 | C5:94584 | C6:1062683 | C7:0.2171818834466362 | C8:0.13218659101519015
+    Row 7: C0:MARRAKECH | C1:736472 | C2:29929 | C3:766401 | C4:832889 | C5:37834 | C6:870723 | C7:0.13091740079731476 | C8:0.2641250960606769
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Janvier 2026/2025
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Janvier | C3:Var Janvier 26-25
+    Row 5: C1:2025 | C2:2026.0
+    Row 6: C0:EUROPE | C1:2000395 | C2:2263549.0 | C3:0.13155101867381203
+    Row 7: C0:AFRIQUE | C1:158906 | C2:204860.0 | C3:0.2891898355002329
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Janvier 2026
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MARRAKECH-PARIS-ORLY | C1:69434 | C2:2.478457084255904
+    Row 6: C0:MOHAMMED V-PARIS-ORLY | C1:64568 | C2:2.3047644816118216
+    Row 7: C0:MOHAMMED V-JEDDAH | C1:56227 | C2:2.007031230758083
+
+--- File: onda_excel\Dossier+communication+Juillet+2023.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Juillet et Cumul à fin Juillet 2023/2022/2019
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C9:MOUVEMENTS | C17:FRET (tonnes)
+    Row 7: C1:JUILLET | C4:Taux Récupération 23-19 | C5:CUMUL | C8:Taux Récupération 23-19 | C9:JUILLET | C12:Taux Récupération 23-19 | C13:CUMUL | C16:Taux Récupération 23-19 | C17:JUILLET | C20:Taux Récupération 23-19
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Juillet et cumul à fin Juillet 2019-2023
+    Row 4: C0:AEROPORT | C1:2019-07-01 00:00:00 | C4:2023-07-01 00:00:00 | C7:Taux de récupération Juillet 23/19 | C9:Cumul Juillet 2019 | C12:Cumul Juillet 2023 | C15:Taux de récupération Cumul Juillet 23/19
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:983765 | C2:99185 | C3:1082950 | C4:782196 | C5:79387 | C6:861583 | C7:0.7951045219132618 | C8:0.8003932046176337 | C9:5122523
+    Row 7: C0:MARRAKECH | C1:465517 | C2:26508 | C3:492025 | C4:514034 | C5:10367 | C6:524401 | C7:1.1042217577446152 | C8:0.39108948242040137 | C9:3426924
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Juillet et Cumul à fin Juillet 2019-2023
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Juillet | C3:Taux de récupération | C4:Cumul Juillet | C6:Taux de récupération
+    Row 5: C1:2023 | C2:2019.0 | C4:2023 | C5:2019.0
+    Row 6: C0:EUROPE | C1:1873871 | C2:1616363.0 | C3:1.1593132235766348 | C4:11131269 | C5:9801201.0 | C6:1.1357045937533574
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:162576 | C2:175534.0 | C3:0.9261795435642097 | C4:973953 | C5:1022313.0 | C6:0.9526955051926367
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Juillet 2023
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MOHAMMED V-PARIS-ORLY | C1:61300 | C2:2.717939509219047
+    Row 6: C0:MARRAKECH-PARIS-ORLY | C1:60811 | C2:2.6962580668045586
+    Row 7: C0:MOHAMMED V-PARIS-CDG | C1:41105 | C2:1.8225269743303252
+
+--- File: onda_excel\Dossier+communication+Juillet+2024.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Juillet et Cumul à fin Juillet 2024/2023
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C7:MOUVEMENTS | C13:FRET (tonnes)
+    Row 7: C1:Juillet | C3:Var 24-23 | C4:CUMUL | C6:Var Cumul 24-23 | C7:Juillet | C9:Var 24-23 | C10:CUMUL | C12:Var Cumul 24-23 | C13:Juillet | C15:Var 24-23
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Juillet et cumul à fin Juillet 2023-2024
+    Row 4: C0:AEROPORT | C1:2023-07-01 00:00:00 | C4:2024-07-01 00:00:00 | C7:Variation Juillet 24/23 | C9:Cumul Juillet 2023 | C12:Cumul Juillet 2024 | C15:Variation Cumul Juillet 24/23
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:911086 | C2:94544 | C3:1005630 | C4:925794 | C5:99972 | C6:1025766 | C7:0.01614337175634353 | C8:0.05741242172956507 | C9:4916837
+    Row 7: C0:MARRAKECH | C1:515533 | C2:10384 | C3:525917 | C4:674945 | C5:32125 | C6:707070 | C7:0.3092178386252674 | C8:2.0937018489984593 | C9:3877949
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Juillet et Cumul à fin Juillet 2023-2024
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Juillet | C3:Var Juillet 24-23 | C4:Cumul Juillet | C6:Var Cumul Juillet 24-23
+    Row 5: C1:2024 | C2:2023.0 | C4:2024 | C5:2023.0
+    Row 6: C0:EUROPE | C1:2198823 | C2:1941925.0 | C3:0.13229038196634782 | C4:13531162 | C5:11366618.0 | C6:0.19042990623948125
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:163929 | C2:169542.0 | C3:-0.03310684078281488 | C4:1119145 | C5:998132.0 | C6:0.121239475339935
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Juillet 2024
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MARRAKECH-PARIS-ORLY | C1:67021 | C2:2.491701886556759
+    Row 6: C0:MOHAMMED V-PARIS-ORLY | C1:56508 | C2:2.1008503335603663
+    Row 7: C0:MOHAMMED V-PARIS-CDG | C1:55058 | C2:2.046942338521389
+
+--- File: onda_excel\Dossier+communication+Juillet+2026.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 5: C0:Trafic aérien commercial par aéroport
+    Row 6: C0:Juillet et Cumul à fin Juillet  2026/2025
+  [Sheet: Ventilation nat-inter]
+    Row 5: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Juillet et le Cumul à fin Juillet 2026-2025
+    Row 7: C0:AEROPORT | C1:2025-07-01 00:00:00 | C4:2026-07-01 00:00:00 | C7:Variation Juillet 26/25 | C9:Cumul à fin Juillet 2025 | C12:Cumul à fin Juillet 2026 | C15:Variation Cumul 26/25
+  [Sheet: Ventilation par région]
+    Row 5: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Juillet et Cumul à fin Juillet 2025-2026
+    Row 7: C1:Trafic Global
+  [Sheet: Top 5 des routes]
+    Row 5: C0:TOP 5 des Routes Aériennes internationales Juillet 2026
+    Row 6: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 7: C0:MED V-PARIS-ORLY | C1:74879 | C2:2.4485889196601622
+
+--- File: onda_excel\Dossier+communication+Juin+2023.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Juin et Cumul à fin Juin 2023/2022/2019
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C9:MOUVEMENTS | C17:FRET (tonnes)
+    Row 7: C1:JUIN | C4:Taux Récupération 23-19 | C5:CUMUL | C8:Taux Récupération 23-19 | C9:JUIN | C12:Taux Récupération 23-19 | C13:CUMUL | C16:Taux Récupération 23-19 | C17:JUIN | C20:Taux Récupération 23-19
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Juin et cumul à fin Juin 2019-2023
+    Row 4: C0:AEROPORT | C1:2019-06-01 00:00:00 | C4:2023-06-01 00:00:00 | C7:Taux de récupération Juin 23/19 | C9:Cumul Juin 2019 | C12:Cumul Juin 2023 | C15:Taux de récupération Cumul Juin 23/19
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:790907 | C2:91167 | C3:882074 | C4:655635 | C5:69523 | C6:725158 | C7:0.828965984622718 | C8:0.762589533493479 | C9:4138758
+    Row 7: C0:MARRAKECH | C1:484261 | C2:30026 | C3:514287 | C4:530655 | C5:15764 | C6:546419 | C7:1.095803709156839 | C8:0.5250116565643109 | C9:2961407
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Juin et Cumul à fin Juin 2019-2023
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Juin | C3:Taux de récupération | C4:Cumul Juin | C6:Taux de récupération
+    Row 5: C1:2023 | C2:2019.0 | C4:2023 | C5:2019.0
+    Row 6: C0:EUROPE | C1:1569135 | C2:1433085.0 | C3:1.0949350527009911 | C4:9246949 | C5:8184838.0 | C6:1.1297656715991202
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:158707 | C2:185335.0 | C3:0.8563250330482639 | C4:811254 | C5:846779.0 | C6:0.9580469048004261
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Juin 2023
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MARRAKECH-PARIS-ORLY | C1:54385 | C2:2.8425394641798736
+    Row 6: C0:MOHAMMED V-PARIS-ORLY | C1:53686 | C2:2.8060048482846502
+    Row 7: C0:MARRAKECH-PARIS-CDG | C1:40095 | C2:2.095644383861212
+
+--- File: onda_excel\Dossier+communication+Juin+2024.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Juin et Cumul à fin Juin 2024/2023
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C7:MOUVEMENTS | C13:FRET (tonnes)
+    Row 7: C1:Juin | C3:Var 24-23 | C4:CUMUL | C6:Var Cumul 24-23 | C7:Juin | C9:Var 24-23 | C10:CUMUL | C12:Var Cumul 24-23 | C13:Juin | C15:Var 24-23
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Juin et cumul à fin Juin 2023-2024
+    Row 4: C0:AEROPORT | C1:2023-06-01 00:00:00 | C4:2024-06-01 00:00:00 | C7:Variation Juin 24/23 | C9:Cumul Juin 2023 | C12:Cumul Juin 2024 | C15:Variation Cumul Juin 24/23
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:755874 | C2:88715 | C3:844589 | C4:786042 | C5:95152 | C6:881194 | C7:0.03991141380706308 | C8:0.07255819196302768 | C9:4005751
+    Row 7: C0:MARRAKECH | C1:532956 | C2:15788 | C3:548744 | C4:710229 | C5:34594 | C6:744823 | C7:0.3326222052101862 | C8:1.1911578413985304 | C9:3362416
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Juin et Cumul à fin Juin 2023-2024
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Juin | C3:Var Juin 24-23 | C4:Cumul Juin | C6:Var Cumul Juin 24-23
+    Row 5: C1:2024 | C2:2023.0 | C4:2024 | C5:2023.0
+    Row 6: C0:EUROPE | C1:1997082 | C2:1625236.0 | C3:0.22879507960690015 | C4:11325746 | C5:9424693.0 | C6:0.2017098063565572
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:173175 | C2:163558.0 | C3:0.058798713606182516 | C4:954110 | C5:828590.0 | C6:0.15148625979072883
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Juin 2024
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MARRAKECH-PARIS-ORLY | C1:65746 | C2:2.7021495211869633
+    Row 6: C0:MARRAKECH-PARIS-CDG | C1:52602 | C2:2.1619333360733224
+    Row 7: C0:MOHAMMED V-PARIS-ORLY | C1:51087 | C2:2.0996670913649256
+
+--- File: onda_excel\Dossier+communication+Juin+2026.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 5: C0:Trafic aérien commercial par aéroport
+    Row 6: C0:Juin et Cumul à fin Juin 2026/2025
+  [Sheet: Ventilation nat-inter]
+    Row 5: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Juin et le Cumul à fin Juin 2026-2025
+    Row 7: C0:AEROPORT | C1:2025-06-01 00:00:00 | C4:2026-06-01 00:00:00 | C7:Variation Juin 26/25 | C9:Cumul à fin Juin 2025 | C12:Cumul à fin Juin 2026 | C15:Variation Cumul 26/25
+  [Sheet: Ventilation par région]
+    Row 5: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Juin et Cumul à fin Juin 2025-2026
+    Row 7: C1:Trafic Global
+  [Sheet: Top 5 des routes]
+    Row 5: C0:TOP 5 des Routes Aériennes internationales Juin 2026
+    Row 6: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 7: C0:MARRAKECH-PARIS-ORLY | C1:73621 | C2:2.6563689567705455
+
+--- File: onda_excel\Dossier+communication+Mai+2023.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Mai et Cumul à fin Mai 2023/2022/2019
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C9:MOUVEMENTS | C17:FRET (tonnes)
+    Row 7: C1:MAI | C4:Taux Récupération 23-19 | C5:CUMUL | C8:Taux Récupération 23-19 | C9:MAI | C12:Taux Récupération 23-19 | C13:CUMUL | C16:Taux Récupération 23-19 | C17:MAI | C20:Taux Récupération 23-19
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Mai et cumul à fin Mai 2019-2023
+    Row 4: C0:AEROPORT | C1:2019-05-01 00:00:00 | C4:2023-05-01 00:00:00 | C7:Taux de récupération Mai 23/19 | C9:Cumul Mai 2019 | C12:Cumul Mai 2023 | C15:Taux de récupération Cumul Mai 23/19
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:541851 | C2:68242 | C3:610093 | C4:651728 | C5:74010 | C6:725738 | C7:1.2027808382747287 | C8:1.084522727938806 | C9:3347851
+    Row 7: C0:MARRAKECH | C1:469155 | C2:23710 | C3:492865 | C4:597678 | C5:24117 | C6:621795 | C7:1.2739457109057775 | C8:1.0171657528469 | C9:2477146
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Mai et Cumul à fin Mai 2019-2023
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Mai | C3:Taux de récupération | C4:Cumul Mai | C6:Taux de récupération
+    Row 5: C1:2023 | C2:2019.0 | C4:2023 | C5:2019.0
+    Row 6: C0:EUROPE | C1:1708768 | C2:1157056.0 | C3:1.476823939377178 | C4:7670392 | C5:6751753.0 | C6:1.1360593315543386
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:151940 | C2:133142.0 | C3:1.1411876042120443 | C4:652426 | C5:661444.0 | C6:0.9863661927540351
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Mai 2023
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MED V-PARIS-ORLY | C1:58986 | C2:2.9246887442174105
+    Row 6: C0:MARRAKECH-PARIS-ORLY | C1:58365 | C2:2.8938978495956524
+    Row 7: C0:MARRAKECH-PARIS-CDG | C1:47586 | C2:2.3594452680691975
+
+--- File: onda_excel\Dossier+communication+Mai+2024.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Mai et Cumul à fin Mai 2024/2023
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C7:MOUVEMENTS | C13:FRET (tonnes)
+    Row 7: C1:Mai | C3:Var 24-23 | C4:CUMUL | C6:Var Cumul 24-23 | C7:Mai | C9:Var 24-23 | C10:CUMUL | C12:Var Cumul 24-23 | C13:Mai | C15:Var 24-23
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Mai et cumul à fin Mai 2023-2024
+    Row 4: C0:AEROPORT | C1:2023-05-01 00:00:00 | C4:2024-05-01 00:00:00 | C7:Variation Mai 24/23 | C9:Cumul Mai 2023 | C12:Cumul Mai 2024 | C15:Variation Cumul Mai 24/23
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:737135 | C2:99338 | C3:836473 | C4:763766 | C5:105512 | C6:869278 | C7:0.036127710663582654 | C8:0.06215144254967887 | C9:3249877
+    Row 7: C0:MARRAKECH | C1:599969 | C2:24362 | C3:624331 | C4:792778 | C5:43193 | C6:835971 | C7:0.3213649371884214 | C8:0.7729660947377063 | C9:2829460
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Mai et Cumul à fin Mai 2023-2024
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Mai | C3:Var Mai 24-23 | C4:Cumul Mai | C6:Var Cumul Mai 24-23
+    Row 5: C1:2024 | C2:2023.0 | C4:2024 | C5:2023.0
+    Row 6: C0:EUROPE | C1:2113975 | C2:1753419.0 | C3:0.20563025722887684 | C4:9324006 | C5:7799457.0 | C6:0.19546860762229987
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:158258 | C2:155166.0 | C3:0.01992704587345166 | C4:780515 | C5:665032.0 | C6:0.17365029051233624
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Mai 2024
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MARRAKECH-PARIS-ORLY | C1:67389 | C2:2.7020979963118763
+    Row 6: C0:MARRAKECH-PARIS-CDG | C1:57373 | C2:2.3004862565463395
+    Row 7: C0:MOHAMMED V-PARIS-ORLY | C1:52817 | C2:2.117804239137016
+
+--- File: onda_excel\Dossier+communication+Mai+2026.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 5: C0:Trafic aérien commercial par aéroport
+    Row 6: C0:Mai et Cumul à fin Mai 2026/2025
+  [Sheet: Ventilation nat-inter]
+    Row 5: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Mai et le Cumul à fin Mai 2026-2025
+    Row 7: C0:AEROPORT | C1:2025-05-01 00:00:00 | C4:2026-05-01 00:00:00 | C7:Variation Mai 26/25 | C9:Cumul à fin Mai 2025 | C12:Cumul à fin Mai 2026 | C15:Variation Cumul 26/25
+  [Sheet: Ventilation par région]
+    Row 5: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Mai et Cumul à fin Mai 2025-2026
+    Row 7: C1:Trafic Global
+  [Sheet: Top 5 des routes]
+    Row 5: C0:TOP 5 des Routes Aériennes internationales Mai 2026
+    Row 6: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 7: C0:MARRAKECH-PARIS-ORLY | C1:82502 | C2:2.760898592143175
+
+--- File: onda_excel\Dossier+communication+Mars+2023.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Mars et  Cumul à fin Mars 2023/2022/2019
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C9:MOUVEMENTS | C17:FRET (tonnes)
+    Row 7: C1:MARS | C4:Taux Récupération 23-19 | C5:CUMUL | C8:Taux Récupération 23-19 | C9:MARS | C12:Taux Récupération 23-19 | C13:CUMUL | C16:Taux Récupération 23-19 | C17:MARS | C20:Taux Récupération 23-19
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Mars et cumul à fin Mars 2019-2023
+    Row 4: C0:AEROPORT | C1:2019-03-01 00:00:00 | C4:2023-03-01 00:00:00 | C7:Taux de récupération Mars 23/19 | C9:Cumul Mars 2019 | C12:Cumul Mars 2023 | C15:Taux de récupération Cumul Mars 23/19
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:702946 | C2:96168 | C3:799114 | C4:581712 | C5:61472 | C6:643184 | C7:0.8275344052032446 | C8:0.6392147075950421 | C9:1979422
+    Row 7: C0:MARRAKECH | C1:547133 | C2:33616 | C3:580749 | C4:628039 | C5:16489 | C6:644528 | C7:1.1478726379143644 | C8:0.4905104712041885 | C9:1436114
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Mars et Cumul à fin Mars 2019-2023
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Mars | C3:Taux de récupération | C4:Cumul Mars | C6:Taux de récupération
+    Row 5: C1:2023 | C2:2019.0 | C4:2023 | C5:2019.0
+    Row 6: C0:EUROPE | C1:1567897 | C2:1466001.0 | C3:1.0695060917420929 | C4:4474541 | C5:3980621.0 | C6:1.1240811421132533
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:145833 | C2:136008.0 | C3:1.0722383977413092 | C4:369940 | C5:359362.0 | C6:1.029435499579811
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Mars 2023
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MARRAKECH-PARIS-ORLY | C1:64925 | C2:3.490232992203489
+    Row 6: C0:MOHAMMED V-PARIS-ORLY | C1:51245 | C2:2.7548246389752453
+    Row 7: C0:MARRAKECH-LONDRES-GATW. | C1:48894 | C2:2.62843976774428
+
+--- File: onda_excel\Dossier+communication+Mars+2026.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 5: C0:Trafic aérien commercial par aéroport
+    Row 6: C0:Mars et Cumul à fin Mars 2026/2025
+  [Sheet: Ventilation nat-inter]
+    Row 5: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Mars et le Cumul à fin Mars 2026-2025
+    Row 7: C0:AEROPORT | C1:2025-03-01 00:00:00 | C4:2026-03-01 00:00:00 | C7:Variation Mars 26/25 | C9:Cumul à fin Mars 2025 | C12:Cumul à fin Mars 2026 | C15:Variation Cumul 26/25
+  [Sheet: Ventilation par région]
+    Row 5: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Mars et Cumul à fin Mars 2025-2026
+    Row 7: C1:Trafic Global
+  [Sheet: Top 5 des routes]
+    Row 5: C0:TOP 5 des Routes Aériennes internationales Mars 2026
+    Row 6: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 7: C0:MED V-JEDDAH | C1:73215 | C2:2.706400212327567
+
+--- File: onda_excel\Dossier+communication+Novembre+2023.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Novembre et Cumul à fin Novembre 2023/2022/2019
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C9:MOUVEMENTS | C17:FRET (tonnes)
+    Row 7: C1:Novembre | C4:Taux Récupération 23-19 | C5:CUMUL | C8:Taux Récupération 23-19 | C9:Novembre | C12:Taux Récupération 23-19 | C13:CUMUL | C16:Taux Récupération 23-19 | C17:Novembre | C20:Taux Récupération 23-19
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Novembre et cumul à fin Novembre 2019-2023
+    Row 4: C0:AEROPORT | C1:2019-11-01 00:00:00 | C4:2023-11-01 00:00:00 | C7:Taux de récupération Novembre 23/19 | C9:Cumul Novembre 2019 | C12:Cumul Novembre 2023 | C15:Taux de récupération Cumul Novembre 23/19
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:676891 | C2:95409 | C3:772300 | C4:630542 | C5:80699 | C6:711241 | C7:0.9315266416601786 | C8:0.8458216730077875 | C9:8425782
+    Row 7: C0:MARRAKECH | C1:541436 | C2:29787 | C3:571223 | C4:596905 | C5:16243 | C6:613148 | C7:1.102447934751291 | C8:0.5453049988249907 | C9:5535402
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Novembre et Cumul à fin Novembre 2019-2023
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Novembre | C3:Taux de récupération | C4:Cumul Novembre | C6:Taux de récupération
+    Row 5: C1:2023 | C2:2019.0 | C4:2023 | C5:2019.0
+    Row 6: C0:EUROPE | C1:1588389 | C2:1412699.0 | C3:1.1243647797584624 | C4:18390599 | C5:16070696.0 | C6:1.1443561000718325
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:121056 | C2:125581.0 | C3:0.9639674791568789 | C4:1557092 | C5:1624102.0 | C6:0.9587402761649206
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Novembre 2023
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MARRAKECH-PARIS-ORLY | C1:54353 | C2:2.8608588734891183
+    Row 6: C0:MARRAKECH-LONDRES-GATW. | C1:50376 | C2:2.6515303039553992
+    Row 7: C0:MOHAMMED V-PARIS-ORLY | C1:45711 | C2:2.4059889972229884
+
+--- File: onda_excel\Dossier+communication+Novembre+2025.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien commercial par aéroport
+    Row 4: C0:Novembre et Cumul à fin Novembre 2025/2024
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C7:MOUVEMENTS | C13:FRET (tonnes)
+    Row 7: C1:Novembre | C3:Var 25-24 | C4:CUMUL | C6:Var Cumul 25-24 | C7:Novembre | C9:Var 25-24 | C10:CUMUL | C12:Var Cumul 25-24 | C13:Novembre | C15:Var 25-24
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Novembre et Cumul à fin Novembre 2025-2024
+    Row 4: C0:AEROPORT | C1:2024-11-01 00:00:00 | C4:2025-11-01 00:00:00 | C7:Variation Novembre 25/24 | C9:Cumul Novembre 2024 | C12:Cumul Novembre 2025 | C15:Variation Cumul Novembre 25/24
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:697257 | C2:90453 | C3:787710 | C4:790393 | C5:101573 | C6:891966 | C7:0.1335748511667864 | C8:0.12293677379412513 | C9:8565868
+    Row 7: C0:MARRAKECH | C1:795191 | C2:31744 | C3:826935 | C4:907986 | C5:35420 | C6:943406 | C7:0.14184642431818267 | C8:0.11580141129032258 | C9:8109588
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Novembre et Cumul à fin Novembre 2024-2025
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Novembre | C3:Var Novembre 25-24 | C4:Cumul Novembre | C6:Var Cumul Novembre 25-24
+    Row 5: C1:2024 | C2:2025.0 | C4:2024 | C5:2025.0
+    Row 6: C0:EUROPE | C1:1994589 | C2:2203615.0 | C3:0.1047965270038087 | C4:22285766 | C5:24505506.0 | C6:0.09960348681754971
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:157319 | C2:182043.0 | C3:0.1571583851918712 | C4:1770330 | C5:2054394.0 | C6:0.16045821965396279
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Novembre 2025
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MARRAKECH-PARIS-ORLY | C1:67973 | C2:2.578771015847531
+    Row 6: C0:MARRAKECH-LONDRES-GATW. | C1:54111 | C2:2.0528721468601616
+    Row 7: C0:MOHAMMED V-PARIS-ORLY | C1:53164 | C2:2.0169447028455143
+
+--- File: onda_excel\Dossier+communication+Octobre+2023.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Octobre et Cumul à fin Octobre 2023/2022/2019
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C9:MOUVEMENTS | C17:FRET (tonnes)
+    Row 7: C1:OCTOBRE | C4:Taux Récupération 23-19 | C5:CUMUL | C8:Taux Récupération 23-19 | C9:OCTOBRE | C12:Taux Récupération 23-19 | C13:CUMUL | C16:Taux Récupération 23-19 | C17:OCTOBRE | C20:Taux Récupération 23-19
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois d'Octobre et cumul à fin Octobre 2019-2023
+    Row 4: C0:AEROPORT | C1:2019-10-01 00:00:00 | C4:2023-10-01 00:00:00 | C7:Taux de récupération Octobre 23/19 | C9:Cumul Octobre 2019 | C12:Cumul Octobre 2023 | C15:Taux de récupération Cumul Octobre 23/19
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:742456 | C2:105944 | C3:848400 | C4:646883 | C5:75475 | C6:722358 | C7:0.8712745267059597 | C8:0.7124046666163256 | C9:7748891
+    Row 7: C0:MARRAKECH | C1:562953 | C2:36137 | C3:599090 | C4:583420 | C5:22646 | C6:606066 | C7:1.0363564986775096 | C8:0.6266707252954036 | C9:4993966
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Octobre et Cumul à fin Octobre 2019-2023
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Octobre | C3:Taux de récupération | C4:Cumul Octobre | C6:Taux de récupération
+    Row 5: C1:2023 | C2:2019.0 | C4:2023 | C5:2019.0
+    Row 6: C0:EUROPE | C1:1698794 | C2:1553625.0 | C3:1.0934388929117387 | C4:16453606 | C5:14657997.0 | C6:1.1225002979602192
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:133985 | C2:120504.0 | C3:1.1118718050853085 | C4:1395702 | C5:1498521.0 | C6:0.931386346938081
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Octobre 2023
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MOHAMMED V-PARIS-ORLY | C1:54701 | C2:2.740352582246647
+    Row 6: C0:MARRAKECH-PARIS-ORLY | C1:54104 | C2:2.7104447105148464
+    Row 7: C0:MARRAKECH-PARIS-CDG | C1:42558 | C2:2.1320254692830627
+
+--- File: onda_excel\Dossier+communication+Octobre+2026.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 5: C0:Trafic aérien commercial par aéroport
+    Row 6: C0:Octobre et Cumul à fin Octobre 2026/2025
+  [Sheet: Ventilation nat-inter]
+    Row 5: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois d'Octobre et le Cumul à fin Octobre 2026-2025
+    Row 7: C0:AEROPORT | C1:2025-10-01 00:00:00 | C4:2026-10-01 00:00:00 | C7:Variation Octobre 26/25 | C9:Cumul à fin Octobre 2025 | C12:Cumul à fin Octobre 2026 | C15:Variation Cumul 26/25
+  [Sheet: Ventilation par région]
+    Row 5: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Octobre et Cumul à fin Octobre 2025-2026
+    Row 7: C1:Trafic Global
+  [Sheet: Top 5 des routes]
+    Row 5: C0:TOP 5 des Routes Aériennes internationales Octobre 2026
+    Row 6: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 7: C0:MARRAKECH-PARIS-ORLY | C1:77585 | C2:2.423172001955153
+
+--- File: onda_excel\Dossier+communication+Septembre+2023.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Septembre et Cumul à fin Septembre 2023/2022/2019
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C9:MOUVEMENTS | C17:FRET (tonnes)
+    Row 7: C1:SEPTEMBRE | C4:Taux Récupération 23-19 | C5:CUMUL | C8:Taux Récupération 23-19 | C9:SEPTEMBRE | C12:Taux Récupération 23-19 | C13:CUMUL | C16:Taux Récupération 23-19 | C17:SEPTEMBRE | C20:Taux Récupération 23-19
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Septembre et cumul à fin Septembre 2019-2023
+    Row 4: C0:AEROPORT | C1:2019-09-01 00:00:00 | C4:2023-09-01 00:00:00 | C7:Taux de récupération Septembre 23/19 | C9:Cumul Septembre 2019 | C12:Cumul Septembre 2023 | C15:Taux de récupération Cumul Septembre 23/19
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:817820 | C2:92768 | C3:910588 | C4:677528 | C5:67524 | C6:745052 | C7:0.828456139492798 | C8:0.7278803035529493 | C9:7006435
+    Row 7: C0:MARRAKECH | C1:509885 | C2:29695 | C3:539580 | C4:458826 | C5:13474 | C6:472300 | C7:0.8998617335281485 | C8:0.45374642195655834 | C9:4431013
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Septembre et Cumul à fin Septembre 2019-2023
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Septembre | C3:Taux de récupération | C4:Cumul Septembre | C6:Taux de récupération
+    Row 5: C1:2023 | C2:2019.0 | C4:2023 | C5:2019.0
+    Row 6: C0:EUROPE | C1:1593418 | C2:1527576.0 | C3:1.0431022744531204 | C4:14749951 | C5:13104372.0 | C6:1.1255748081632604
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:134950 | C2:138430.0 | C3:0.9748609405475692 | C4:1261267 | C5:1378017.0 | C6:0.9152768071801727
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Septembre 2023
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MOHAMMED V-PARIS-ORLY | C1:57638 | C2:3.0258058114916366
+    Row 6: C0:MARRAKECH-PARIS-ORLY | C1:47663 | C2:2.5021510530054107
+    Row 7: C0:AGADIR-PARIS-ORLY | C1:35674 | C2:1.872767905186728
+
+--- File: onda_excel\Dossier+communication+Septembre+2024.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien commercial par aéroport
+    Row 4: C0:Septembre et Cumul à fin Septembre 2024/2023
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C7:MOUVEMENTS | C13:FRET (tonnes)
+    Row 7: C1:Septembre | C3:Var 24-23 | C4:CUMUL | C6:Var Cumul 24-23 | C7:Septembre | C9:Var 24-23 | C10:CUMUL | C12:Var Cumul 24-23 | C13:Septembre | C15:Var 24-23
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Septembre et cumul à fin Septembre 2023-2024
+    Row 4: C0:AEROPORT | C1:2023-09-01 00:00:00 | C4:2024-09-01 00:00:00 | C7:Variation Septembre 24/23 | C9:Cumul Septembre 2023 | C12:Cumul Septembre 2024 | C15:Variation Cumul Septembre 24/23
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:778213 | C2:88841 | C3:867054 | C4:836691 | C5:96292 | C6:932983 | C7:0.07514395159165935 | C8:0.08386893438840175 | C9:6630524
+    Row 7: C0:MARRAKECH | C1:459797 | C2:13624 | C3:473421 | C4:745734 | C5:35503 | C6:781237 | C7:0.6218766107651855 | C8:1.6059160305343512 | C9:4877410
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Septembre et Cumul à fin Septembre 2023-2024
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Septembre | C3:Var Septembre 24-23 | C4:Cumul Septembre | C6:Var Cumul Septembre 24-23
+    Row 5: C1:2024 | C2:2023.0 | C4:2024 | C5:2023.0
+    Row 6: C0:EUROPE | C1:2104870 | C2:1632076.0 | C3:0.28968871547648517 | C4:18050063 | C5:15059223.0 | C6:0.1986052002815816
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:158602 | C2:140813.0 | C3:0.12633066549253266 | C4:1452888 | C5:1297376.0 | C6:0.11986656142860666
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Septembre 2024
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MARRAKECH-PARIS-ORLY | C1:64343 | C2:2.538136343715644
+    Row 6: C0:MOHAMMED V-PARIS-ORLY | C1:54775 | C2:2.160707741743848
+    Row 7: C0:MARRAKECH-PARIS-CDG | C1:51771 | C2:2.0422090460578866
+
+--- File: onda_excel\Dossier+communication+Septembre+2026.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 5: C0:Trafic aérien commercial par aéroport
+    Row 6: C0:Septembre et Cumul à fin Septembre 2026/2025
+  [Sheet: Ventilation nat-inter]
+    Row 5: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Septembre et le Cumul à fin Septembre 2026-2025
+    Row 7: C0:AEROPORT | C1:2025-09-01 00:00:00 | C4:2026-09-01 00:00:00 | C7:Variation Septembre 26/25 | C9:Cumul à fin Septembre 2025 | C12:Cumul à fin Septembre 2026 | C15:Variation Cumul 26/25
+  [Sheet: Ventilation par région]
+    Row 5: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Septembre et Cumul à fin Septembre 2025-2026
+    Row 7: C1:Trafic Global
+  [Sheet: Top 5 des routes]
+    Row 5: C0:TOP 5 des Routes Aériennes internationales Septembre 2026
+    Row 6: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 7: C0:MED V-PARIS-ORLY | C1:68898 | C2:2.358594880228513
+
+--- File: onda_excel\Les+statistiques+du+trafic+aérien+du+mois+de+décembre+2022.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Décembre et  Cumul à fin Décembre 2022/2021/2019
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C9:MOUVEMENTS | C17:FRET (tonnes)
+    Row 7: C1:DECEMBRE | C4:Taux Récupération 22-19 | C5:CUMUL | C8:Taux Récupération 22-19 | C9:DECEMBRE | C12:Taux Récupération 22-19 | C13:CUMUL | C16:Taux Récupération 22-19 | C17:DECEMBRE | C20:Taux Récupération 22-19
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Décembre et cumul à fin Décembre 2019-2022
+    Row 4: C0:AEROPORT | C1:2019-12-01 00:00:00 | C4:2022-12-01 00:00:00 | C7:Taux de récupération Déc-22/19 | C9:Cumul Décembre 2019 | C12:Cumul Décembre 2022 | C15:Taux de récupération Cumul Déc 22/19
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:764079 | C2:91237 | C3:855316 | C4:712794 | C5:77525 | C6:790319 | C7:0.9328799770704338 | C8:0.8497100956848647 | C9:9189861
+    Row 7: C0:MARRAKECH | C1:497112 | C2:28067 | C3:525179 | C4:567171 | C5:17283 | C6:584454 | C7:1.1409320233669675 | C8:0.6157765347204902 | C9:6032514
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Décembre et Cumul à fin Décembre 2019-2022
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Décembre | C3:Taux de récupération | C4:Cumul Décembre | C6:Taux de récupération
+    Row 5: C1:2022 | C2:2019.0 | C4:2022 | C5:2019.0
+    Row 6: C0:EUROPE | C1:1548500 | C2:1406867.0 | C3:1.1006726293245914 | C4:15273827 | C5:17477563.0 | C6:0.873910567508754
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:147813 | C2:117000.0 | C3:1.2633589743589744 | C4:1284579 | C5:1741102.0 | C6:0.7377965219728655
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Décembre 2022
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MARRAKECH-PARIS-ORLY | C1:63419 | C2:3.308796099920748
+    Row 6: C0:MED V-PARIS-ORLY | C1:56770 | C2:2.961893984334362
+    Row 7: C0:MARRAKECH-LONDRES-GATW. | C1:44249 | C2:2.308628622737558
+
+--- File: onda_excel\STATISTIQUES DU TRAFIC COMMERCIAL PAR AEROPORT Septembre 2022.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 3: C0:TABLEAU DE BORD STATISTIQUES DU TRAFIC COMMERCIAL PAR AEROPORT
+    Row 4: C0:SEPTEMBRE ET CUMUL A FIN SEPTEMBRE 2022/2021/2019
+    Row 6: C0:AEROPORTS | C1:MOUVEMENTS | C9:PASSAGERS | C17:FRET (tonnes)
+    Row 7: C1:SEPTEMBRE | C4:Taux Récupération 22-19 | C5:CUMUL | C8:Taux Récupération 22-19 | C9:SEPTEMBRE | C12:Taux Récupération 22-19 | C13:CUMUL | C16:Taux Récupération 22-19 | C17:SEPTEMBRE | C20:Taux Récupération 22-19
+
+--- File: onda_excel\Stat+site+web+nov+2022.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Novembre et  Cumul à fin Novembre 2022/2021/2019
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C9:MOUVEMENTS
+    Row 7: C1:NOVEMBRE | C4:Taux Récupération 22-19 | C5:CUMUL | C8:Taux Récupération 22-19 | C9:NOVEMBRE | C12:Taux Récupération 22-19 | C13:CUMUL | C16:Taux Récupération 22-19
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Novembre et cumul à fin Novembre 2019-2022
+    Row 4: C0:AEROPORT | C1:2019-11-01 00:00:00 | C4:2022-11-01 00:00:00 | C7:Taux de récupération Nov-22/19 | C9:Cumul Novembre 2019 | C12:Cumul Novembre 2022 | C15:Taux de récupération Cumul Nov 22/19
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:676891 | C2:95409 | C3:772300 | C4:587696 | C5:76655 | C6:664351 | C7:0.8682284149146613 | C8:0.8034357345743064 | C9:8425782
+    Row 7: C0:MARRAKECH | C1:541436 | C2:29787 | C3:571223 | C4:536534 | C5:16419 | C6:552953 | C7:0.9909462983621333 | C8:0.5512136166784167 | C9:5535402
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Novembre et Cumul à fin Novembre 2019-2022
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Novembre | C3:Taux de récupération | C4:Cumul Novembre | C6:Taux de récupération
+    Row 5: C1:2022 | C2:2019.0 | C4:2022 | C5:2019.0
+    Row 6: C0:EUROPE | C1:1426817 | C2:1412699.0 | C3:1.0099936362947803 | C4:13720904 | C5:16070696.0 | C6:0.8537840551523095
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:129194 | C2:125581.0 | C3:1.0287702757582755 | C4:1136491 | C5:1624102.0 | C6:0.6997657782577695
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Novembre 2022
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MARRAKECH-PARIS-ORLY | C1:55750 | C2:3.2436495741364473
+    Row 6: C0:MOHAMMED V-PARIS-ORLY | C1:51758 | C2:3.0113868100117354
+    Row 7: C0:MARRAKECH-LONDRES-GATW. | C1:46396 | C2:2.6994146303432216
+
+--- File: onda_excel\Statistiques+du+trafic+aérien+du+mois+d'août.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien commercial par aéroport
+    Row 4: C0:Août et Cumul à fin Aout 2025/2024
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C7:MOUVEMENTS | C13:FRET (tonnes)
+    Row 7: C1:Aout | C3:Var 25-24 | C4:CUMUL | C6:Var Cumul 25-24 | C7:Aout | C9:Var 25-24 | C10:CUMUL | C12:Var Cumul 25-24 | C13:Aout | C15:Var 25-24
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois d'Août et cumul à fin Août 2024-2025
+    Row 4: C0:AEROPORT | C1:2024-08-01 00:00:00 | C4:2025-08-01 00:00:00 | C7:Variation Aout 25/24 | C9:Cumul à fin Aout 2024 | C12:Cumul à fin Aout 2025 | C15:Variation Cumul à fin Aout 25/24
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:999770 | C2:104515 | C3:1104285 | C4:1078340 | C5:108026 | C6:1186366 | C7:0.07858807525730918 | C8:0.03359326412476678 | C9:6247379
+    Row 7: C0:MARRAKECH | C1:706546 | C2:34808 | C3:741354 | C4:722253 | C5:34073 | C6:756326 | C7:0.022230682786400318 | C8:-0.021115835440128707 | C9:5714745
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Août et Cumul à fin Août 2024-2025
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Août | C3:Var Aout 25-24 | C4:Cumul à fin Août | C6:Var Cumul Aout 25-24
+    Row 5: C1:2025 | C2:2024.0 | C4:2025 | C5:2024.0
+    Row 6: C0:EUROPE | C1:2501598 | C2:2403380.0 | C3:0.04086661285356456 | C4:17631777 | C5:15946126.0 | C6:0.10570912333189893
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:203348 | C2:175141.0 | C3:0.1610530943639696 | C4:1494954 | C5:1294286.0 | C6:0.1550414668782634
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Aout 2025
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MOHAMMED V-PARIS-ORLY | C1:71126 | C2:0.023254551779516273
+    Row 6: C0:MARRAKECH-PARIS-ORLY | C1:65665 | C2:0.02146908504065934
+    Row 7: C0:MOHAMMED V-PARIS-CDG | C1:59041 | C2:0.019303376987521024
+
+--- File: onda_excel\Statistiques+du+trafic+aérien+du+mois+d'octobre.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien commercial par aéroport
+    Row 4: C0:Octobre et Cumul à fin Octobre 2025/2024
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C7:MOUVEMENTS | C13:FRET (tonnes)
+    Row 7: C1:Octobre | C3:Var 25-24 | C4:CUMUL | C6:Var Cumul 25-24 | C7:Octobre | C9:Var 25-24 | C10:CUMUL | C12:Var Cumul 25-24 | C13:Octobre | C15:Var 25-24
+  [Sheet: Ventilation nat-inter]
+    Row 1: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois d'Octobre et Cumul à fin Octobre 2024-2025
+    Row 4: C0:AEROPORT | C1:2024-10-01 00:00:00 | C4:2025-10-01 00:00:00 | C7:Variation Octobre 25/24 | C9:Cumul Octobre 2024 | C12:Cumul Octobre 2025 | C15:Variation Cumul Octobre 25/24
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:782387 | C2:105236 | C3:887623 | C4:877993 | C5:109932 | C6:987925 | C7:0.12219783815426381 | C8:0.04462351286631951 | C9:7868611
+    Row 7: C0:MARRAKECH | C1:853146 | C2:40780 | C3:893926 | C4:923652 | C5:44581 | C6:968233 | C7:0.08264236133088593 | C8:0.09320745463462482 | C9:7314397
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Octobre et Cumul à fin Octobre 2024-2025
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Octobre | C3:Var Octobre 25-24 | C4:Cumul Octobre | C6:Var Cumul Octobre 25-24
+    Row 5: C1:2025 | C2:2024.0 | C4:2025 | C5:2024.0
+    Row 6: C0:EUROPE | C1:2429660 | C2:2233419.0 | C3:0.08786573410542312 | C4:22295922 | C5:20291057.0 | C6:0.09880535055418749
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:187441 | C2:160123.0 | C3:0.17060634637122712 | C4:1871405 | C5:1613011.0 | C6:0.16019357586526067
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Octobre 2025
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MARRAKECH-PARIS-ORLY | C1:80370 | C2:0.02790188064299653
+    Row 6: C0:MOHAMMED V-PARIS-ORLY | C1:61541 | C2:0.021365057069188124
+    Row 7: C0:MARRAKECH-LONDRES-GATW. | C1:53292 | C2:0.018501269419268024
+
+--- File: onda_excel\Statistiques+du+trafic+aérien+du+mois+de+séptembre.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien commercial par aéroport
+    Row 4: C0:Septembre et Cumul à fin Septembre 2025/2024
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C7:MOUVEMENTS | C13:FRET (tonnes)
+    Row 7: C1:Septembre | C3:Var 25-24 | C4:CUMUL | C6:Var Cumul 25-24 | C7:Septembre | C9:Var 25-24 | C10:CUMUL | C12:Var Cumul 25-24 | C13:Septembre | C15:Var 25-24
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois de Septembre et Cumul à fin Septembre 2024-2025
+    Row 4: C0:AEROPORT | C1:2024-09-01 00:00:00 | C4:2025-09-01 00:00:00 | C7:Variation Septembre 25/24 | C9:Cumul Septembre 2024 | C12:Cumul Septembre 2025 | C15:Variation Cumul Septembre 25/24
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:838682 | C2:96599 | C3:935281 | C4:897503 | C5:99022 | C6:996525 | C7:0.07013504522572322 | C8:0.02508307539415522 | C9:7086224
+    Row 7: C0:MARRAKECH | C1:746506 | C2:35503 | C3:782009 | C4:780520 | C5:33785 | C6:814305 | C7:0.04556426873996994 | C8:-0.048390276878010306 | C9:6461251
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Septembre et Cumul à fin Septembre 2024-2025
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Septembre | C3:Var Septembre 25-24 | C4:Cumul Septembre | C6:Var Cumul Septembre 25-24
+    Row 5: C1:2025 | C2:2024.0 | C4:2025 | C5:2024.0
+    Row 6: C0:EUROPE | C1:2220786 | C2:2110390.0 | C3:0.05231071034263809 | C4:19857228 | C5:18057638.0 | C6:0.09965810589402667
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:188039 | C2:158602.0 | C3:0.18560295582653435 | C4:1683264 | C5:1452888.0 | C6:0.15856418388753984
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Septembre 2025
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MARRAKECH-PARIS-ORLY | C1:67236 | C2:0.02492194748213679
+    Row 6: C0:MOHAMMED V-PARIS-ORLY | C1:57757 | C2:0.021408425854092666
+    Row 7: C0:MOHAMMED V-PARIS-CDG | C1:48866 | C2:0.018112854507437923
+
+--- File: onda_excel\Top 5 des Routes aériennes internationales Septembre 2022-2019.xlsx ---
+Sheets (2): ['Feuil1', 'Feuil2']
+  [Sheet: Feuil1]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Septembre 2022 | C4:TOP 5 des Routes Aériennes internationales Septembre 2019
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part % | C4:ROUTES AERIENNES | C5:Passagers | C6:Part %
+    Row 5: C0:MOHAMMED V-PARIS-ORLY | C1:54332 | C2:2.9336346952031738 | C4:MOHAMMED V-PARIS-ORLY | C5:55949 | C6:2.8968076040099366
+    Row 6: C0:MARRAKECH-PARIS-ORLY | C1:43901 | C2:2.370417005707769 | C4:MARRAKECH-PARIS-ORLY | C5:47278 | C6:2.4478591199553486
+    Row 7: C0:MOHAMMED V-PARIS-CDG | C1:39707 | C2:2.1439636465146217 | C4:MOHAMMED V-PARIS-CDG | C5:47201 | C6:2.443872378717636
+  [Sheet: Feuil2]
+    Row 2: C0:TOP 5 des Routes Aériennes internationales de l'aéroport Marrakech Septembre 2022 | C4:TOP 5 des Routes Aériennes internationales de l'aéroport Essaouira Septembre 2022
+    Row 3: C0:ROUTES AERIENNES | C1:Passagers | C2:Part % | C4:ROUTES AERIENNES | C5:Passagers | C6:Part %
+    Row 4: C0:MARRAKECH-PARIS-ORLY | C1:43901 | C2:9.243639089385427 | C4:ESSAOUIRA-PARIS-ORLY | C5:3450 | C6:36.85503685503686
+    Row 5: C0:MARRAKECH-LONDRES-GATW. | C1:29997 | C2:6.316062088888515 | C4:ESSAOUIRA-MARSEILLE | C5:2834 | C6:30.27454331802158
+    Row 6: C0:MARRAKECH-PARIS-CDG | C1:29417 | C2:6.193939342895404 | C4:ESSAOUIRA-CHARLEROI | C5:2786 | C6:29.761777587864547
+    Row 7: C0:MARRAKECH-MADRID | C1:29334 | C2:6.176463156830873 | C4:ESSAOUIRA-TEL AVIV | C5:291 | C6:3.108642239077022
+
+--- File: onda_excel\Trafic aérien global (passagers) au titre du mois de juin 2022.xls ---
+Sheets (1): ['Feuil3']
+  [Sheet: Feuil3]
+    Row 5: C0:Ventilation du trafic aérien commercial des passagers en national, international par aéroport au titre du mois de juin 2019-2022
+
+--- File: onda_excel\Trafic aérien international des passagers par secteur géographique et par aéroport Février 19 22.xlsx ---
+Sheets (1): ['Feuil4']
+  [Sheet: Feuil4]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Février 2019-2022
+    Row 3: C0:AEROPORT/SECTEUR | C1:07 au 28 Fev 2019 | C2:07 au 28 Fev 2022
+    Row 4: C0:EUROPE | C1:977227 | C2:538682
+    Row 5: C0:MARRAKECH | C1:361871 | C2:108242
+    Row 6: C0:MOHAMMED V | C1:246621 | C2:210272
+    Row 7: C0:AGADIR | C1:98158 | C2:26306
+
+--- File: onda_excel\Trafic aérien passagers par secteur géographique et par aéroport juin 2019 2022.xls ---
+Sheets (1): ['Feuil4']
+  [Sheet: Feuil4]
+    Row 5: C0:Trafic aérien international des passagers par secteur géographique et par aéroport juin 2019-2022
+
+--- File: onda_excel\Trafic+aérien+international+des+passagers+par+secteur+géographique+et+par+aéroport+Avril+19+22.xlsx ---
+Sheets (1): ['Feuil4']
+  [Sheet: Feuil4]
+    Row 4: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Avril 2019-2022
+    Row 6: C0:AEROPORT/SECTEUR | C1:Avril 2019 | C2:Avril 2022
+    Row 7: C0:EUROPE | C1:1614076 | C2:1069590
+
+--- File: onda_excel\Trafic+aérien+international+des+passagers+par+secteur+géographique+et+par+aéroport+Mai+19+22.xlsx ---
+Sheets (1): ['Feuil4']
+  [Sheet: Feuil4]
+    Row 5: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Mai 2019-2022
+    Row 7: C0:AEROPORT/SECTEUR | C1:Mai 2019 | C2:Mai 2022
+
+--- File: onda_excel\Trafic+aérien+international+des+passagers+par+secteur+géographique+et+par+aéroport+Mars+19+22.xlsx ---
+Sheets (1): ['Feuil4']
+  [Sheet: Feuil4]
+    Row 5: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Mars 2019-2022
+    Row 7: C0:AEROPORT/SECTEUR | C1:Mars 2019 | C2:Mars 2022
+
+--- File: onda_excel\Trafic+aérien+international+des+passagers+par+secteur+géographique+et+par+aéroport+vf.xlsx ---
+Sheets (1): ['Feuil2']
+  [Sheet: Feuil2]
+    Row 5: C0:Trafic aérien international des passagers par secteur géographique et par aéroport du 07 Février au 30 Avril 2019-2022
+    Row 7: C0:AEROPORT/SECTEUR | C1:7 fev au 30 avril 2022 | C2:7 Fev au 30 Avril 2019 | C3:Taux de Récupération
+
+--- File: onda_excel\Ventilation du trafic aérien commercial des passagers au titre des mois de Février 19 22.xlsx ---
+Sheets (1): ['Feuil3']
+  [Sheet: Feuil3]
+    Row 2: C0:Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre des mois de Février 2019-2022
+    Row 4: C0:AEROPORT | C1:07 Fev au 28 Fev 2019 | C4:07 Fev au 28 Fev 2022
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL
+    Row 6: C0:MOHAMMED V | C1:455696 | C2:58718 | C3:514414 | C4:328981 | C5:43353 | C6:372334
+    Row 7: C0:MARRAKECH | C1:366478 | C2:19396 | C3:385874 | C4:109545 | C5:6710 | C6:116255
+
+--- File: onda_excel\Ventilation+du+trafic+aérien+commercial+des+passagers+en+national++international+et+par+aéroport.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 5: C0:Ventilation du trafic aérien commercial des passagers en national, international et par aéroport du 07 Février au 30 Avril 2019-2022
+    Row 7: C0:AEROPORT | C1:7 fev au 30 avril 2022 | C3:Total 7 fev au 30 avril 2022 | C4:7 Fev au 30 Avril 2019 | C6:Total 7 Fev au 30 Avril 2019 | C7:Taux de Récupération
+
+--- File: onda_excel\Ventilation+du+trafic+aérien+commercial+des+passagers+en+national+international+et+par+aéroport.xlsx ---
+Sheets (1): ['Feuil3']
+  [Sheet: Feuil3]
+    Row 5: C0:Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois de Mars  2019-2022
+    Row 7: C0:AEROPORT | C1:Mars 2019 | C4:Mars 2022
+
+--- File: onda_excel\Ventilation+du+trafic+aérien+commercial+des+passagers+en+national,+international+et+par+aéroport+au+titre+du+mois+de+Mai+19+22.xlsx ---
+Sheets (1): ['Feuil3']
+  [Sheet: Feuil3]
+    Row 1: C0:Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois de Mai 2019-2022
+    Row 4: C0:AEROPORT | C1:Mai 2022 | C4:Mai 2019
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL
+    Row 6: C0:MOHAMMED V | C1:536471 | C2:71456 | C3:607927 | C4:541851 | C5:68242 | C6:610093
+    Row 7: C0:MARRAKECH | C1:459054 | C2:13512 | C3:472566 | C4:469155 | C5:23710 | C6:492865
+
+--- File: onda_excel\Ventilation+du+trafic+aérien+commercial+des+passagers+en+national,+international+et+par+aéroport.xlsx ---
+Sheets (1): ['Feuil3']
+  [Sheet: Feuil3]
+    Row 6: C0:Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois d'Avril 2019-2022
+
+--- File: onda_excel\stat+Octobre+2022.xlsx ---
+Sheets (4): ['Trafic aérien par aéroport', 'Ventilation nat-inter', 'Ventilation par région', 'Top 5 des routes']
+  [Sheet: Trafic aérien par aéroport]
+    Row 3: C0:Trafic aérien par aéroport
+    Row 4: C0:Octobre et  Cumul à fin Octobre 2022/2021/2019
+    Row 6: C0:AEROPORTS | C1:PASSAGERS | C9:MOUVEMENTS
+    Row 7: C1:OCTOBRE | C4:Taux Récupération 22-19 | C5:CUMUL | C8:Taux Récupération 22-19 | C9:OCTOBRE | C12:Taux Récupération 22-19 | C13:CUMUL | C16:Taux Récupération 22-19
+  [Sheet: Ventilation nat-inter]
+    Row 2: C0:Ventilation du trafic aérien des passagers en national, international et par aéroport au titre du mois d'octobre et cumul à fin Octobre 2019-2022
+    Row 4: C0:AEROPORT | C1:2019-10-01 00:00:00 | C4:2022-10-01 00:00:00 | C7:Taux de récupération Oct-22/19 | C9:Cumul Octobre 2019 | C12:Cumul Octobre 2022 | C15:Taux de récupération Cumul Oct 22/19
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL | C7:INTERNATIONAL | C8:NATIONAL | C9:INTERNATIONAL | C10:NATIONAL
+    Row 6: C0:MOHAMMED V | C1:742456 | C2:105944 | C3:848400 | C4:672159 | C5:87201 | C6:759360 | C7:0.9053182949561994 | C8:0.8230857811674092 | C9:7748891
+    Row 7: C0:MARRAKECH | C1:562953 | C2:36137 | C3:599090 | C4:568967 | C5:18994 | C6:587961 | C7:1.010682952218036 | C8:0.52561086974569 | C9:4993966
+  [Sheet: Ventilation par région]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Octobre et Cumul à fin Octobre 2019-2022
+    Row 3: C1:Trafic Global
+    Row 4: C0:Passagers | C1:Octobre | C3:Taux de récupération | C4:Cumul Octobre | C6:Taux de récupération
+    Row 5: C1:2022 | C2:2019.0 | C4:2022 | C5:2019.0
+    Row 6: C0:EUROPE | C1:1658704 | C2:1553625.0 | C3:1.0676347252393596 | C4:12289367 | C5:14657997.0 | C6:0.8384069801624329
+    Row 7: C0:MOYEN ET EXTREME ORIENT | C1:129137 | C2:120504.0 | C3:1.0716407754099448 | C4:1006847 | C5:1498521.0 | C6:0.6718938206404849
+  [Sheet: Top 5 des routes]
+    Row 3: C0:TOP 5 des Routes Aériennes internationales Octobre 2022
+    Row 4: C0:ROUTES AERIENNES | C1:Passagers | C2:Part %
+    Row 5: C0:MOHAMMED V-PARIS-ORLY | C1:61226 | C2:3.107850945385456
+    Row 6: C0:MARRAKECH-PARIS-ORLY | C1:54479 | C2:2.7653711111889434
+    Row 7: C0:MOHAMMED V-PARIS-CDG | C1:38078 | C2:1.9328512118771013
+
+--- File: onda_excel\Dossier communication Août 2022\Fret Août 2022-2019.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 1: C0:TABLEAU DE BORD STATISTIQUES DU TRAFIC COMMERCIAL PAR AEROPORT
+    Row 2: C0:Août 2022-2019
+    Row 3: C0:AEROPORT | C1:Août | C2:Août | C3:Var
+    Row 4: C1:2022 | C2:2019 | C3:( %)
+    Row 5: C0:MOHAMMED V | C1:4700.542000000002 | C2:5816.711000000001 | C3:-19.189005608152076
+    Row 6: C0:TANGER | C1:265.8889999999999 | C2:205.78900000000002 | C3:29.204670803590027
+    Row 7: C0:RABAT SALE | C1:68.956 | C2:247.385 | C3:-72.12603836125876
+
+--- File: onda_excel\Dossier communication Août 2022\Top 5 des Routes aériennes internationales Août 2022-2019.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 4: C0:TOP 5 des Routes Aériennes internationales Août 2022 | C4:TOP 5 des Routes Aériennes internationales Août 2019
+    Row 5: C0:ROUTES AERIENNES | C1:Passagers | C2:Part (%) | C4:ROUTES AERIENNES | C5:Passagers | C6:Part (%)
+    Row 6: C0:MOHAMMED V-PARIS-ORLY | C1:71659 | C2:3.1869379085461476 | C4:MOHAMMED V-PARIS-ORLY | C5:64597 | C6:2.778776730836735
+    Row 7: C0:MOHAMMED V-PARIS-CDG | C1:55482 | C2:2.4674875318097844 | C4:MOHAMMED V-PARIS-CDG | C5:60288 | C6:2.5934159720836116
+
+--- File: onda_excel\Dossier communication Août 2022\Trafic aérien Mouvements du 07 Fev au 31 Août 2022-2019.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 2: C0:Mouvements aéroportuaires:
+    Row 4: C0:AEROPORT | C1:du 7 au 28 février | C3:Taux de récupération | C4:Mars | C6:Taux de récupération | C7:Avril | C9:Taux de récupération | C10:Mai | C12:Taux de récupération | C13:Juin
+    Row 5: C1:2022 | C2:2019.0 | C4:2022 | C5:2019.0 | C7:2022 | C8:2019.0 | C10:2022 | C11:2019.0 | C13:2022 | C14:2019.0
+    Row 6: C0:MOHAMMED V | C1:3622 | C2:4845.0 | C3:0.7475748194014448 | C4:5330 | C5:7081.0 | C6:0.7527185425787318 | C7:4882 | C8:7696.0 | C9:0.6343555093555093
+    Row 7: C0:MARRAKECH | C1:1122 | C2:2730.0 | C3:0.41098901098901097 | C4:2502 | C5:3906.0 | C6:0.6405529953917051 | C7:3337 | C8:4099.0 | C9:0.8141010002439619
+
+--- File: onda_excel\Dossier communication Août 2022\01 au 30 avril 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Avril 19 22.xlsx ---
+Sheets (1): ['Feuil4']
+  [Sheet: Feuil4]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Avril 2019-2022
+    Row 3: C0:AEROPORT/SECTEUR | C1:Avril 2019 | C2:Avril 2022
+    Row 4: C0:EUROPE | C1:1614076 | C2:1069590
+    Row 5: C0:MARRAKECH | C1:564361 | C2:389407
+    Row 6: C0:MOHAMMED V | C1:463435 | C2:228251
+    Row 7: C0:AGADIR | C1:138745 | C2:104894
+
+--- File: onda_excel\Dossier communication Août 2022\01 au 30 avril 2022\Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre des mois d Avril 19 22.xlsx ---
+Sheets (1): ['Feuil3']
+  [Sheet: Feuil3]
+    Row 2: C0:Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre des mois d'Avril 2019-2022
+    Row 4: C0:AEROPORT | C1:Avril 2019 | C4:Avril 2022
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL
+    Row 6: C0:MOHAMMED V | C1:826578 | C2:122631 | C3:949209 | C4:407753 | C5:52013 | C6:459766
+    Row 7: C0:MARRAKECH | C1:571877 | C2:45892 | C3:617769 | C4:399660 | C5:9367 | C6:409027
+
+--- File: onda_excel\Dossier communication Août 2022\01 au 30 juin 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Juin 19 22.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Juin 2019-2022
+    Row 3: C0:AEROPORT/SECTEUR | C1:Juin 2019 | C2:Juin 2022
+    Row 4: C0:EUROPE | C1:1433085 | C2:1396925
+    Row 5: C0:MARRAKECH | C1:472741 | C2:426484
+    Row 6: C0:MOHAMMED V | C1:412347 | C2:340127
+    Row 7: C0:AGADIR | C1:119594 | C2:131194
+
+--- File: onda_excel\Dossier communication Août 2022\01 au 30 juin 2022\Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois de Juin 19 22.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 1: C0:Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois de Juin 2019-2022
+    Row 4: C0:AEROPORT | C1:Juin 2019 | C4:Juin 2022
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL
+    Row 6: C0:MOHAMMED V | C1:790907 | C2:91167 | C3:882074 | C4:606640 | C5:71820 | C6:678460
+    Row 7: C0:MARRAKECH | C1:484261 | C2:30026 | C3:514287 | C4:442441 | C5:11708 | C6:454149
+
+--- File: onda_excel\Dossier communication Août 2022\01 au 31 juillet 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Juillet 19 22.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Juillet 2019-2022
+    Row 4: C0:AEROPORT/SECTEUR | C1:Juillet 2019 | C2:Juillet 2022
+    Row 5: C0:EUROPE | C1:1616363 | C2:1745113
+    Row 6: C0:MOHAMMED V | C1:505672 | C2:484755
+    Row 7: C0:MARRAKECH | C1:457325 | C2:416434
+
+--- File: onda_excel\Dossier communication Août 2022\01 au 31 juillet 2022\Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois de Juillet 19 22.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 1: C0:Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois de Juillet 2019-2022
+    Row 4: C0:AEROPORT | C1:Juillet 2019 | C4:Juillet 2022
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL
+    Row 6: C0:MOHAMMED V | C1:983765 | C2:99185 | C3:1082950 | C4:851221 | C5:87108 | C6:938329
+    Row 7: C0:MARRAKECH | C1:465517 | C2:26508 | C3:492025 | C4:430242 | C5:12672 | C6:442914
+
+--- File: onda_excel\Dossier communication Août 2022\01 au 31 juillet 2022\01 au 31 Aout 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Août 19- 22.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Août 2019-2022
+    Row 4: C0:AEROPORT/SECTEUR | C1:Août 2019 | C2:Août 2022
+    Row 5: C0:EUROPE | C1:1775595 | C2:1870739
+    Row 6: C0:MOHAMMED V | C1:567583 | C2:517308
+    Row 7: C0:MARRAKECH | C1:482335 | C2:449423
+
+--- File: onda_excel\Dossier communication Août 2022\01 au 31 juillet 2022\01 au 31 Aout 2022\Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois d'Août 19-22.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 1: C0:Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois d' Août 2019-2022
+    Row 4: C0:AEROPORT | C1:Août 2019 | C4:Août 2022
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL
+    Row 6: C0:MOHAMMED V | C1:1066092 | C2:106653 | C3:1172745 | C4:870648 | C5:86498 | C6:957146
+    Row 7: C0:MARRAKECH | C1:494204 | C2:31610 | C3:525814 | C4:463127 | C5:13554 | C6:476681
+
+--- File: onda_excel\Dossier communication Août 2022\01 au 31 mai 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Mai 19 22.xlsx ---
+Sheets (1): ['Feuil4']
+  [Sheet: Feuil4]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Mai 2019-2022
+    Row 3: C0:AEROPORT/SECTEUR | C1:Mai 2019 | C2:Mai 2022
+    Row 4: C0:EUROPE | C1:1333195 | C2:1156913
+    Row 5: C0:MARRAKECH | C1:442574 | C2:459173
+    Row 6: C0:MOHAMMED V | C1:310337 | C2:281281
+    Row 7: C0:AGADIR | C1:125788 | C2:96011
+
+--- File: onda_excel\Dossier communication Août 2022\01 au 31 mai 2022\Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois de Mai 19 22.xlsx ---
+Sheets (1): ['Feuil3']
+  [Sheet: Feuil3]
+    Row 1: C0:Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois de Mai 2019-2022
+    Row 4: C0:AEROPORT | C1:Mai 2022 | C4:Mai 2019
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL
+    Row 6: C0:MOHAMMED V | C1:536471 | C2:71456 | C3:607927 | C4:541851 | C5:68242 | C6:610093
+    Row 7: C0:MARRAKECH | C1:459054 | C2:13512 | C3:472566 | C4:469155 | C5:23710 | C6:492865
+
+--- File: onda_excel\Dossier communication Août 2022\01 au 31 mars 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Mars 19 22.xlsx ---
+Sheets (1): ['Feuil4']
+  [Sheet: Feuil4]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Mars 2019-2022
+    Row 3: C0:AEROPORT/SECTEUR | C1:Mars 2019 | C2:Mars 2022
+    Row 4: C0:EUROPE | C1:1465859 | C2:1065201
+    Row 5: C0:MARRAKECH | C1:541304 | C2:287896
+    Row 6: C0:MOHAMMED V | C1:374772 | C2:297015
+    Row 7: C0:AGADIR | C1:149428 | C2:68982
+
+--- File: onda_excel\Dossier communication Août 2022\01 au 31 mars 2022\Ventilation du trafic aérien commercial des passagers en national international et par aéroport au titre des mois de Mars  19 22.xlsx ---
+Sheets (1): ['Feuil3']
+  [Sheet: Feuil3]
+    Row 2: C0:Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre des mois de Mars  2019-2022
+    Row 4: C0:AEROPORT | C1:Mars 2019 | C4:Mars 2022
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL
+    Row 6: C0:MOHAMMED V | C1:702804 | C2:96168 | C3:798972 | C4:499030 | C5:66454 | C6:565484
+    Row 7: C0:MARRAKECH | C1:547133 | C2:33616 | C3:580749 | C4:296701 | C5:8563 | C6:305264
+
+--- File: onda_excel\Dossier communication Août 2022\07 au 28 fev 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Février 19 22.xlsx ---
+Sheets (1): ['Feuil4']
+  [Sheet: Feuil4]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Février 2019-2022
+    Row 3: C0:AEROPORT/SECTEUR | C1:07 au 28 Fev 2019 | C2:07 au 28 Fev 2022
+    Row 4: C0:EUROPE | C1:977227 | C2:538682
+    Row 5: C0:MARRAKECH | C1:361871 | C2:108242
+    Row 6: C0:MOHAMMED V | C1:246621 | C2:210272
+    Row 7: C0:AGADIR | C1:98158 | C2:26306
+
+--- File: onda_excel\Dossier communication Août 2022\07 au 28 fev 2022\Ventilation du trafic aérien commercial des passagers en national international et par aéroport au titre des mois de Février 19 22.xlsx ---
+Sheets (1): ['Feuil3']
+  [Sheet: Feuil3]
+    Row 2: C0:Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre des mois de Février 2019-2022
+    Row 4: C0:AEROPORT | C1:07 Fev au 28 Fev 2019 | C4:07 Fev au 28 Fev 2022
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL
+    Row 6: C0:MOHAMMED V | C1:455696 | C2:58718 | C3:514414 | C4:328981 | C5:43353 | C6:372334
+    Row 7: C0:MARRAKECH | C1:366478 | C2:19396 | C3:385874 | C4:109545 | C5:6710 | C6:116255
+
+--- File: onda_excel\Dossier communication Août 2022\07 Fev au 31 Août 2022-2019\Trafic aérien internarional des passagers par secteur géographique et par aéroport.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport
+    Row 3: C0:AEROPORT/SECTEUR | C1:7 Fev au 31 Août 2019 | C2:7 fev au 31 Août 2022 | C3:Taux de Récupération
+    Row 4: C0:EUROPE | C1:10039118 | C2:9019445 | C3:0.8984300214421227
+    Row 5: C0:MARRAKECH | C1:3339110 | C2:2520460 | C3:0.754829879818275
+    Row 6: C0:MOHAMMED V | C1:2851711 | C2:2388065 | C3:0.8374148011492049
+    Row 7: C0:AGADIR | C1:877963 | C2:777949 | C3:0.8860840377100174
+
+--- File: onda_excel\Dossier communication Août 2022\07 Fev au 31 Août 2022-2019\Ventilation du trafic aérien commercial des passagers en national et international 07 Fev au 31 Août 19-22.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 1: C0:Ventilation du trafic aérien commercial des passagers en national, international et par aéroport du 07 Fevrier au 31 Août 2019-2022
+    Row 4: C0:AEROPORT | C1:07 Fev au 31 Août 2019 | C4:07 Fev au 31 Août 2022
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL
+    Row 6: C0:MED V | C1:5367693 | C2:642764 | C3:6010457 | C4:4100744 | C5:478702 | C6:4579446
+    Row 7: C0:MARRAKECH | C1:3398625 | C2:210758 | C3:3609383 | C4:2600770 | C5:76086 | C6:2676856
+
+--- File: onda_excel\Dossier communication Juillet 2022\Fret Juillet 2022-2019.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 1: C0:TABLEAU DE BORD STATISTIQUES DU TRAFIC COMMERCIAL PAR AEROPORT
+    Row 2: C0:JUILLET 2022-2019
+    Row 3: C0:AEROPORT | C1:Juillet | C2:Juillet | C3:Var
+    Row 4: C1:2022 | C2:2019 | C3:( %)
+    Row 5: C0:MOHAMMED V | C1:4677.287000000002 | C2:7266.389 | C3:-35.63120554101904
+    Row 6: C0:TANGER | C1:461.88300000000004 | C2:299.55899999999997 | C3:54.187655854105564
+    Row 7: C0:MARRAKECH | C1:65.78 | C2:18.883 | C3:248.3556638246042
+
+--- File: onda_excel\Dossier communication Juillet 2022\Top 5 des Routes aériennes internationales juillet 2022-2019.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 4: C0:TOP 5 des Routes Aériennes internationales Juillet 2022 | C4:TOP 5 des Routes Aériennes internationales Juillet 2019
+    Row 5: C0:ROUTES AERIENNES | C1:Passagers | C2:Part (%) | C4:ROUTES AERIENNES | C5:Passagers | C6:Part (%)
+    Row 6: C0:MOHAMMED V-PARIS-ORLY | C1:68854 | C2:3.2131329002428024 | C4:MOHAMMED V-PARIS-ORLY | C5:64006 | C6:3.009858714487584
+    Row 7: C0:MOHAMMED V-PARIS-CDG | C1:53619 | C2:2.502178130219288 | C4:MOHAMMED V-PARIS-CDG | C5:58161 | C6:2.7349997296083552
+
+--- File: onda_excel\Dossier communication Juillet 2022\Trafic aérien Mouvements du 07 Fev au 31 Juillet 2022-2019.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 2: C0:Mouvements aéroportuaires:
+    Row 4: C0:AEROPORT | C1:du 7 au 28 février | C3:Taux de récupération | C4:Mars | C6:Taux de récupération | C7:Avril | C9:Taux de récupération | C10:Mai | C12:Taux de récupération | C13:Juin
+    Row 5: C1:2022 | C2:2019.0 | C4:2022 | C5:2019.0 | C7:2022 | C8:2019.0 | C10:2022 | C11:2019.0 | C13:2022 | C14:2019.0
+    Row 6: C0:MOHAMMED V | C1:3622 | C2:4845.0 | C3:0.7475748194014448 | C4:5330 | C5:7081.0 | C6:0.7527185425787318 | C7:4882 | C8:7696.0 | C9:0.6343555093555093
+    Row 7: C0:MARRAKECH | C1:1122 | C2:2730.0 | C3:0.41098901098901097 | C4:2502 | C5:3906.0 | C6:0.6405529953917051 | C7:3337 | C8:4099.0 | C9:0.8141010002439619
+
+--- File: onda_excel\Dossier communication Juillet 2022\01 au 30 avril 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Avril 19 22.xlsx ---
+Sheets (1): ['Feuil4']
+  [Sheet: Feuil4]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Avril 2019-2022
+    Row 3: C0:AEROPORT/SECTEUR | C1:Avril 2019 | C2:Avril 2022
+    Row 4: C0:EUROPE | C1:1614076 | C2:1069590
+    Row 5: C0:MARRAKECH | C1:564361 | C2:389407
+    Row 6: C0:MOHAMMED V | C1:463435 | C2:228251
+    Row 7: C0:AGADIR | C1:138745 | C2:104894
+
+--- File: onda_excel\Dossier communication Juillet 2022\01 au 30 avril 2022\Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre des mois d Avril 19 22.xlsx ---
+Sheets (1): ['Feuil3']
+  [Sheet: Feuil3]
+    Row 2: C0:Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre des mois d'Avril 2019-2022
+    Row 4: C0:AEROPORT | C1:Avril 2019 | C4:Avril 2022
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL
+    Row 6: C0:MOHAMMED V | C1:826578 | C2:122631 | C3:949209 | C4:407753 | C5:52013 | C6:459766
+    Row 7: C0:MARRAKECH | C1:571877 | C2:45892 | C3:617769 | C4:399660 | C5:9367 | C6:409027
+
+--- File: onda_excel\Dossier communication Juillet 2022\01 au 30 juin 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Juin 19 22.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Juin 2019-2022
+    Row 3: C0:AEROPORT/SECTEUR | C1:Juin 2019 | C2:Juin 2022
+    Row 4: C0:EUROPE | C1:1433085 | C2:1396925
+    Row 5: C0:MARRAKECH | C1:472741 | C2:426484
+    Row 6: C0:MOHAMMED V | C1:412347 | C2:340127
+    Row 7: C0:AGADIR | C1:119594 | C2:131194
+
+--- File: onda_excel\Dossier communication Juillet 2022\01 au 30 juin 2022\Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois de Juin 19 22.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 1: C0:Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois de Juin 2019-2022
+    Row 4: C0:AEROPORT | C1:Juin 2019 | C4:Juin 2022
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL
+    Row 6: C0:MOHAMMED V | C1:790907 | C2:91167 | C3:882074 | C4:606640 | C5:71820 | C6:678460
+    Row 7: C0:MARRAKECH | C1:484261 | C2:30026 | C3:514287 | C4:442441 | C5:11708 | C6:454149
+
+--- File: onda_excel\Dossier communication Juillet 2022\01 au 31 juillet 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Juillet 19 22.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Juillet 2019-2022
+    Row 4: C0:AEROPORT/SECTEUR | C1:Juillet 2019 | C2:Juillet 2022
+    Row 5: C0:EUROPE | C1:1616363 | C2:1745113
+    Row 6: C0:MOHAMMED V | C1:505672 | C2:484755
+    Row 7: C0:MARRAKECH | C1:457325 | C2:416434
+
+--- File: onda_excel\Dossier communication Juillet 2022\01 au 31 juillet 2022\Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois de Juillet 19 22.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 1: C0:Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois de Juillet 2019-2022
+    Row 4: C0:AEROPORT | C1:Juillet 2019 | C4:Juillet 2022
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL
+    Row 6: C0:MOHAMMED V | C1:983765 | C2:99185 | C3:1082950 | C4:851221 | C5:87108 | C6:938329
+    Row 7: C0:MARRAKECH | C1:465517 | C2:26508 | C3:492025 | C4:430242 | C5:12672 | C6:442914
+
+--- File: onda_excel\Dossier communication Juillet 2022\01 au 31 mai 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Mai 19 22.xlsx ---
+Sheets (1): ['Feuil4']
+  [Sheet: Feuil4]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Mai 2019-2022
+    Row 3: C0:AEROPORT/SECTEUR | C1:Mai 2019 | C2:Mai 2022
+    Row 4: C0:EUROPE | C1:1333195 | C2:1156913
+    Row 5: C0:MARRAKECH | C1:442574 | C2:459173
+    Row 6: C0:MOHAMMED V | C1:310337 | C2:281281
+    Row 7: C0:AGADIR | C1:125788 | C2:96011
+
+--- File: onda_excel\Dossier communication Juillet 2022\01 au 31 mai 2022\Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois de Mai 19 22.xlsx ---
+Sheets (1): ['Feuil3']
+  [Sheet: Feuil3]
+    Row 1: C0:Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre du mois de Mai 2019-2022
+    Row 4: C0:AEROPORT | C1:Mai 2022 | C4:Mai 2019
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL
+    Row 6: C0:MOHAMMED V | C1:536471 | C2:71456 | C3:607927 | C4:541851 | C5:68242 | C6:610093
+    Row 7: C0:MARRAKECH | C1:459054 | C2:13512 | C3:472566 | C4:469155 | C5:23710 | C6:492865
+
+--- File: onda_excel\Dossier communication Juillet 2022\01 au 31 mars 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Mars 19 22.xlsx ---
+Sheets (1): ['Feuil4']
+  [Sheet: Feuil4]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Mars 2019-2022
+    Row 3: C0:AEROPORT/SECTEUR | C1:Mars 2019 | C2:Mars 2022
+    Row 4: C0:EUROPE | C1:1465859 | C2:1065201
+    Row 5: C0:MARRAKECH | C1:541304 | C2:287896
+    Row 6: C0:MOHAMMED V | C1:374772 | C2:297015
+    Row 7: C0:AGADIR | C1:149428 | C2:68982
+
+--- File: onda_excel\Dossier communication Juillet 2022\01 au 31 mars 2022\Ventilation du trafic aérien commercial des passagers en national international et par aéroport au titre des mois de Mars  19 22.xlsx ---
+Sheets (1): ['Feuil3']
+  [Sheet: Feuil3]
+    Row 2: C0:Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre des mois de Mars  2019-2022
+    Row 4: C0:AEROPORT | C1:Mars 2019 | C4:Mars 2022
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL
+    Row 6: C0:MOHAMMED V | C1:702804 | C2:96168 | C3:798972 | C4:499030 | C5:66454 | C6:565484
+    Row 7: C0:MARRAKECH | C1:547133 | C2:33616 | C3:580749 | C4:296701 | C5:8563 | C6:305264
+
+--- File: onda_excel\Dossier communication Juillet 2022\07 au 28 fev 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Février 19 22.xlsx ---
+Sheets (1): ['Feuil4']
+  [Sheet: Feuil4]
+    Row 1: C0:Trafic aérien international des passagers par secteur géographique et par aéroport Février 2019-2022
+    Row 3: C0:AEROPORT/SECTEUR | C1:07 au 28 Fev 2019 | C2:07 au 28 Fev 2022
+    Row 4: C0:EUROPE | C1:977227 | C2:538682
+    Row 5: C0:MARRAKECH | C1:361871 | C2:108242
+    Row 6: C0:MOHAMMED V | C1:246621 | C2:210272
+    Row 7: C0:AGADIR | C1:98158 | C2:26306
+
+--- File: onda_excel\Dossier communication Juillet 2022\07 au 28 fev 2022\Ventilation du trafic aérien commercial des passagers en national international et par aéroport au titre des mois de Février 19 22.xlsx ---
+Sheets (1): ['Feuil3']
+  [Sheet: Feuil3]
+    Row 2: C0:Ventilation du trafic aérien commercial des passagers en national, international et par aéroport au titre des mois de Février 2019-2022
+    Row 4: C0:AEROPORT | C1:07 Fev au 28 Fev 2019 | C4:07 Fev au 28 Fev 2022
+    Row 5: C1:INTERNATIONAL | C2:NATIONAL | C3:TOTAL | C4:INTERNATIONAL | C5:NATIONAL | C6:TOTAL
+    Row 6: C0:MOHAMMED V | C1:455696 | C2:58718 | C3:514414 | C4:328981 | C5:43353 | C6:372334
+    Row 7: C0:MARRAKECH | C1:366478 | C2:19396 | C3:385874 | C4:109545 | C5:6710 | C6:116255
+
+--- File: onda_excel\Dossier communication Juillet 2022\07 Fev au 31 Juillet 2022-2019\Trafic aérien internarional des passagers par secteur géographique et par aéroport.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 1: C0:Trafic aérien internarional des passagers par secteur géographique et par aéroport
+    Row 3: C0:AEROPORT/SECTEUR | C1:7 Fev au 31 Juillet 2019 | C2:7 fev au 31 Juillet 2022 | C3:Taux de Récupération
+    Row 4: C0:EUROPE | C1:8263523 | C2:7148706 | C3:0.8650918016444076
+    Row 5: C0:MARRAKECH | C1:2856775 | C2:2071037 | C3:0.7249562881220957
+    Row 6: C0:MED V | C1:2284128 | C2:1870757 | C3:0.8190245905658528
+    Row 7: C0:TANGER | C1:550740 | C2:644522 | C3:1.1702836184043288
+
+--- File: onda_excel\Dossier communication Juillet 2022\07 Fev au 31 Juillet 2022-2019\Ventilation du trafic aérien commercial des passagers en national  international et par aéroport du 07 Fev au 31 Juillet 19 22.xlsx ---
+Sheets (1): ['Feuil1']
+  [Sheet: Feuil1]
+    Row 1: C0:Ventilation du trafic aérien commercial des passagers en national, international et par aéroport du 07 Février au 31 Juillet 2019-2022
+    Row 3: C0:AEROPORT | C1:7 Fev au 31 Juillet 2019 | C3:Total 7 Fev au 31 Juillet 2019 | C4:7 fev au 31 Juillet 2022 | C6:Total 7 fev au 31 Juillet 2022
+    Row 4: C1:INTERNATIONAL | C2:NATIONAL | C4:INTERNATIONAL | C5:NATIONAL
+    Row 5: C0:MOHAMMED V | C1:4301601 | C2:536111 | C3:4837712 | C4:3230096 | C5:392204 | C6:3622300
+    Row 6: C0:MARRAKECH | C1:2904421 | C2:179148 | C3:3083569 | C4:2137643 | C5:62532 | C6:2200175
+    Row 7: C0:AGADIR | C1:758678 | C2:204688 | C3:963366 | C4:625103 | C5:166080 | C6:791183

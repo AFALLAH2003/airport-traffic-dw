@@ -1,0 +1,76 @@
+==============================================================================
+ONDA DW - clean data builder
+base folder : D:\Data_Warhouse_Project
+==============================================================================
+
+[1] Scanning onda_excel ...  (source policy: latest_revision)
+skip  onda_excel\Trafic aérien global (passagers) au titre du mois de juin 2022.xls [Feuil3] (natinter): header row AEROPORT not found
+skip  onda_excel\Trafic aérien international des passagers par secteur géographique et par aéroport Février 19 22.xlsx [Feuil4] (region_legacy): only partial periods
+skip  onda_excel\Trafic+aérien+international+des+passagers+par+secteur+géographique+et+par+aéroport+vf.xlsx [Feuil2] (region_legacy): only partial periods
+skip  onda_excel\Ventilation du trafic aérien commercial des passagers au titre des mois de Février 19 22.xlsx [Feuil3] (natinter): no monthly group (partial periods only: 2 skipped)
+skip  onda_excel\Ventilation+du+trafic+aérien+commercial+des+passagers+en+national++international+et+par+aéroport.xlsx [Feuil1] (natinter): no monthly group (partial periods only: 4 skipped)
+skip  onda_excel\Dossier communication Août 2022\Fret Août 2022-2019.xlsx [Feuil1] (trafic): no PASSAGERS/MOUVEMENTS/FRET block
+skip  onda_excel\Dossier communication Août 2022\07 au 28 fev 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Février 19 22.xlsx [Feuil4] (region_legacy): only partial periods
+skip  onda_excel\Dossier communication Août 2022\07 au 28 fev 2022\Ventilation du trafic aérien commercial des passagers en national international et par aéroport au titre des mois de Février 19 22.xlsx [Feuil3] (natinter): no monthly group (partial periods only: 2 skipped)
+skip  onda_excel\Dossier communication Août 2022\07 Fev au 31 Août 2022-2019\Trafic aérien internarional des passagers par secteur géographique et par aéroport.xlsx [Feuil1] (region_legacy): only partial periods
+skip  onda_excel\Dossier communication Août 2022\07 Fev au 31 Août 2022-2019\Ventilation du trafic aérien commercial des passagers en national et international 07 Fev au 31 Août 19-22.xlsx [Feuil1] (natinter): no monthly group (partial periods only: 2 skipped)
+skip  onda_excel\Dossier communication Juillet 2022\Fret Juillet 2022-2019.xlsx [Feuil1] (trafic): no PASSAGERS/MOUVEMENTS/FRET block
+skip  onda_excel\Dossier communication Juillet 2022\07 au 28 fev 2022\Trafic aérien international des passagers par secteur géographique et par aéroport Février 19 22.xlsx [Feuil4] (region_legacy): only partial periods
+skip  onda_excel\Dossier communication Juillet 2022\07 au 28 fev 2022\Ventilation du trafic aérien commercial des passagers en national international et par aéroport au titre des mois de Février 19 22.xlsx [Feuil3] (natinter): no monthly group (partial periods only: 2 skipped)
+skip  onda_excel\Dossier communication Juillet 2022\07 Fev au 31 Juillet 2022-2019\Trafic aérien internarional des passagers par secteur géographique et par aéroport.xlsx [Feuil1] (region_legacy): only partial periods
+skip  onda_excel\Dossier communication Juillet 2022\07 Fev au 31 Juillet 2022-2019\Ventilation du trafic aérien commercial des passagers en national  international et par aéroport du 07 Fev au 31 Juillet 19 22.xlsx [Feuil1] (natinter): no monthly group (partial periods only: 4 skipped)
+files seen: 89 | used: 69 | without usable monthly data: 20 | read errors: 0
+
+[2] Monthly coverage of the NETWORK series (months per year)
+k     ESTIMATED  OBSERVED
+year                     
+2019          0        12
+2020         12         0
+2021          8         4
+2022          0        12
+2023          0        12
+2024          0        12
+2025          0        12
+2026          0        10
+months still without any data : none
+months ESTIMATED (flag is_estimated=1) : 2020-01, 2020-02, 2020-03, 2020-04, 2020-05, 2020-06, 2020-07, 2020-08, 2020-09, 2020-10, 2020-11, 2020-12, 2021-01, 2021-02, 2021-03, 2021-04, 2021-05, 2021-06, 2021-07, 2021-08
+
+zone-of-origin data (network level) present for 67 of 94 months; missing: 2020-01, 2020-02, 2020-03, 2020-04, 2020-05, 2020-06, 2020-07, 2020-08, 2020-09, 2020-10, 2020-11, 2020-12, 2021-01, 2021-02, 2021-03, 2021-04, 2021-05, 2021-06, 2021-07, 2021-08, 2021-09, 2021-10, 2021-11, 2021-12, 2022-01, 2022-02, 2022-09
+national/international split present for 67 of 94 months; missing: 2020-01, 2020-02, 2020-03, 2020-04, 2020-05, 2020-06, 2020-07, 2020-08, 2020-09, 2020-10, 2020-11, 2020-12, 2021-01, 2021-02, 2021-03, 2021-04, 2021-05, 2021-06, 2021-07, 2021-08, 2021-09, 2021-10, 2021-11, 2021-12, 2022-01, 2022-02, 2022-09
+
+[3] Zero / empty values in fact_trafic_mensuel (observed rows)
+rows: 1468 | passengers = 0: 22 | movements = 0: 0 | cargo = 0: 87
+rows with EMPTY (unknown) passengers / movements / cargo: 2 / 1 / 555  (kept empty, never replaced by 0)
+
+[4] Source conflicts above 0.5% : 199 rows (qc_conflicts.csv)
+metric
+cargo_t       35
+movements     82
+passengers    82
+
+[5] Passengers: traffic table vs national/international table
+rows with a mismatch above 0.5% : 38 of 1072
+
+[6] Cumulative control (sum of monthly vs cumulative printed in the report)
+checked: 1415 | complete-month checks failing > 0.5%: 41 | checks skipped (months missing): 124
+
+[6b] ONDA 'TOTAL' row vs sum of airport rows (incl. 'Autres'): 0 months differ by > 0.5% (max 0.02%) -> qc_total_vs_sum.csv
+
+[7] Monthly sum vs annual total (observed months only, network level)
+         monthly      annual         hcp
+year                                    
+2019  25075677.0  25074913.0  25025476.0
+2020         0.0         0.0   7146214.0
+2021   4002984.0   9942343.0   9916949.0
+2022  20599033.0  20599173.0         0.0
+2023  26956340.0  27091248.0         0.0
+2024  32652602.0  32710023.0         0.0
+2025  36353756.0  36359003.0         0.0
+2026  32909043.0         0.0         0.0
+
+[8] Airport labels that could not be mapped : 0  (qc_unmapped_labels.csv - add them to AIRPORTS)
+
+[9] Airports in dim_aeroport: 22 | selected for clustering: 19
+excluded from clustering (too few months / too small): Bouarfa, Es-Smara, Benslimane (code interne)
+
+DONE -> D:\Data_Warhouse_Project\clean
